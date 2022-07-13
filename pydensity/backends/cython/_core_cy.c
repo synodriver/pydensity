@@ -1061,7 +1061,7 @@ struct __pyx_MemviewEnum_obj;
 struct __pyx_memoryview_obj;
 struct __pyx_memoryviewslice_obj;
 
-/* "pydensity/backends/cython/_core_cy.pyx":74
+/* "pydensity/backends/cython/_core_cy.pyx":78
  * @cython.no_gc
  * @cython.final
  * cdef class Compressor:             # <<<<<<<<<<<<<<
@@ -1076,7 +1076,7 @@ struct __pyx_obj_9pydensity_8backends_6cython_8_core_cy_Compressor {
 };
 
 
-/* "pydensity/backends/cython/_core_cy.pyx":112
+/* "pydensity/backends/cython/_core_cy.pyx":116
  * @cython.no_gc
  * @cython.final
  * cdef class DeCompressor:             # <<<<<<<<<<<<<<
@@ -1169,7 +1169,7 @@ struct __pyx_memoryviewslice_obj {
 
 
 
-/* "pydensity/backends/cython/_core_cy.pyx":74
+/* "pydensity/backends/cython/_core_cy.pyx":78
  * @cython.no_gc
  * @cython.final
  * cdef class Compressor:             # <<<<<<<<<<<<<<
@@ -1184,7 +1184,7 @@ static struct __pyx_vtabstruct_9pydensity_8backends_6cython_8_core_cy_Compressor
 static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_10Compressor_compress(struct __pyx_obj_9pydensity_8backends_6cython_8_core_cy_Compressor *, __Pyx_memviewslice, int __pyx_skip_dispatch);
 
 
-/* "pydensity/backends/cython/_core_cy.pyx":112
+/* "pydensity/backends/cython/_core_cy.pyx":116
  * @cython.no_gc
  * @cython.final
  * cdef class DeCompressor:             # <<<<<<<<<<<<<<
@@ -2370,7 +2370,7 @@ static PyObject *__pyx_tuple__31;
 static PyObject *__pyx_codeobj__32;
 /* Late includes */
 
-/* "pydensity/backends/cython/_core_cy.pyx":27
+/* "pydensity/backends/cython/_core_cy.pyx":31
  *     lion = DENSITY_ALGORITHM_LION
  * 
  * cdef inline str format_state(DENSITY_STATE state):             # <<<<<<<<<<<<<<
@@ -2383,7 +2383,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_fo
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("format_state", 0);
 
-  /* "pydensity/backends/cython/_core_cy.pyx":28
+  /* "pydensity/backends/cython/_core_cy.pyx":32
  * 
  * cdef inline str format_state(DENSITY_STATE state):
  *     if state == DENSITY_STATE_ERROR_INPUT_BUFFER_TOO_SMALL:             # <<<<<<<<<<<<<<
@@ -2393,7 +2393,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_fo
   switch (__pyx_v_state) {
     case DENSITY_STATE_ERROR_INPUT_BUFFER_TOO_SMALL:
 
-    /* "pydensity/backends/cython/_core_cy.pyx":29
+    /* "pydensity/backends/cython/_core_cy.pyx":33
  * cdef inline str format_state(DENSITY_STATE state):
  *     if state == DENSITY_STATE_ERROR_INPUT_BUFFER_TOO_SMALL:
  *         return "input_buffer_too_small"             # <<<<<<<<<<<<<<
@@ -2405,7 +2405,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_fo
     __pyx_r = __pyx_n_u_input_buffer_too_small;
     goto __pyx_L0;
 
-    /* "pydensity/backends/cython/_core_cy.pyx":28
+    /* "pydensity/backends/cython/_core_cy.pyx":32
  * 
  * cdef inline str format_state(DENSITY_STATE state):
  *     if state == DENSITY_STATE_ERROR_INPUT_BUFFER_TOO_SMALL:             # <<<<<<<<<<<<<<
@@ -2415,7 +2415,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_fo
     break;
     case DENSITY_STATE_ERROR_OUTPUT_BUFFER_TOO_SMALL:
 
-    /* "pydensity/backends/cython/_core_cy.pyx":31
+    /* "pydensity/backends/cython/_core_cy.pyx":35
  *         return "input_buffer_too_small"
  *     elif state == DENSITY_STATE_ERROR_OUTPUT_BUFFER_TOO_SMALL:
  *         return "output buffer too small"             # <<<<<<<<<<<<<<
@@ -2427,7 +2427,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_fo
     __pyx_r = __pyx_kp_u_output_buffer_too_small;
     goto __pyx_L0;
 
-    /* "pydensity/backends/cython/_core_cy.pyx":30
+    /* "pydensity/backends/cython/_core_cy.pyx":34
  *     if state == DENSITY_STATE_ERROR_INPUT_BUFFER_TOO_SMALL:
  *         return "input_buffer_too_small"
  *     elif state == DENSITY_STATE_ERROR_OUTPUT_BUFFER_TOO_SMALL:             # <<<<<<<<<<<<<<
@@ -2437,7 +2437,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_fo
     break;
     case DENSITY_STATE_ERROR_DURING_PROCESSING:
 
-    /* "pydensity/backends/cython/_core_cy.pyx":33
+    /* "pydensity/backends/cython/_core_cy.pyx":37
  *         return "output buffer too small"
  *     elif state == DENSITY_STATE_ERROR_DURING_PROCESSING:
  *         return "error during processing"             # <<<<<<<<<<<<<<
@@ -2449,7 +2449,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_fo
     __pyx_r = __pyx_kp_u_error_during_processing;
     goto __pyx_L0;
 
-    /* "pydensity/backends/cython/_core_cy.pyx":32
+    /* "pydensity/backends/cython/_core_cy.pyx":36
  *     elif state == DENSITY_STATE_ERROR_OUTPUT_BUFFER_TOO_SMALL:
  *         return "output buffer too small"
  *     elif state == DENSITY_STATE_ERROR_DURING_PROCESSING:             # <<<<<<<<<<<<<<
@@ -2459,7 +2459,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_fo
     break;
     case DENSITY_STATE_ERROR_INVALID_CONTEXT:
 
-    /* "pydensity/backends/cython/_core_cy.pyx":35
+    /* "pydensity/backends/cython/_core_cy.pyx":39
  *         return "error during processing"
  *     elif state == DENSITY_STATE_ERROR_INVALID_CONTEXT:
  *         return "invalid context"             # <<<<<<<<<<<<<<
@@ -2471,7 +2471,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_fo
     __pyx_r = __pyx_kp_u_invalid_context;
     goto __pyx_L0;
 
-    /* "pydensity/backends/cython/_core_cy.pyx":34
+    /* "pydensity/backends/cython/_core_cy.pyx":38
  *     elif state == DENSITY_STATE_ERROR_DURING_PROCESSING:
  *         return "error during processing"
  *     elif state == DENSITY_STATE_ERROR_INVALID_CONTEXT:             # <<<<<<<<<<<<<<
@@ -2481,7 +2481,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_fo
     break;
     case DENSITY_STATE_ERROR_INVALID_ALGORITHM:
 
-    /* "pydensity/backends/cython/_core_cy.pyx":37
+    /* "pydensity/backends/cython/_core_cy.pyx":41
  *         return "invalid context"
  *     elif state == DENSITY_STATE_ERROR_INVALID_ALGORITHM:
  *         return "invalid algorithm"             # <<<<<<<<<<<<<<
@@ -2493,7 +2493,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_fo
     __pyx_r = __pyx_kp_u_invalid_algorithm;
     goto __pyx_L0;
 
-    /* "pydensity/backends/cython/_core_cy.pyx":36
+    /* "pydensity/backends/cython/_core_cy.pyx":40
  *     elif state == DENSITY_STATE_ERROR_INVALID_CONTEXT:
  *         return "invalid context"
  *     elif state == DENSITY_STATE_ERROR_INVALID_ALGORITHM:             # <<<<<<<<<<<<<<
@@ -2503,7 +2503,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_fo
     break;
     default:
 
-    /* "pydensity/backends/cython/_core_cy.pyx":39
+    /* "pydensity/backends/cython/_core_cy.pyx":43
  *         return "invalid algorithm"
  *     else:
  *         return ""             # <<<<<<<<<<<<<<
@@ -2517,7 +2517,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_fo
     break;
   }
 
-  /* "pydensity/backends/cython/_core_cy.pyx":27
+  /* "pydensity/backends/cython/_core_cy.pyx":31
  *     lion = DENSITY_ALGORITHM_LION
  * 
  * cdef inline str format_state(DENSITY_STATE state):             # <<<<<<<<<<<<<<
@@ -2532,7 +2532,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_fo
   return __pyx_r;
 }
 
-/* "pydensity/backends/cython/_core_cy.pyx":41
+/* "pydensity/backends/cython/_core_cy.pyx":45
  *         return ""
  * 
  * cpdef inline uint8_t major_version() nogil:             # <<<<<<<<<<<<<<
@@ -2544,7 +2544,7 @@ static PyObject *__pyx_pw_9pydensity_8backends_6cython_8_core_cy_1major_version(
 static CYTHON_INLINE uint8_t __pyx_f_9pydensity_8backends_6cython_8_core_cy_major_version(CYTHON_UNUSED int __pyx_skip_dispatch) {
   uint8_t __pyx_r;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":42
+  /* "pydensity/backends/cython/_core_cy.pyx":46
  * 
  * cpdef inline uint8_t major_version() nogil:
  *     return density_version_major()             # <<<<<<<<<<<<<<
@@ -2554,7 +2554,7 @@ static CYTHON_INLINE uint8_t __pyx_f_9pydensity_8backends_6cython_8_core_cy_majo
   __pyx_r = density_version_major();
   goto __pyx_L0;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":41
+  /* "pydensity/backends/cython/_core_cy.pyx":45
  *         return ""
  * 
  * cpdef inline uint8_t major_version() nogil:             # <<<<<<<<<<<<<<
@@ -2590,7 +2590,7 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_major_version(C
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("major_version", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_uint8_t(__pyx_f_9pydensity_8backends_6cython_8_core_cy_major_version(0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 41, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_uint8_t(__pyx_f_9pydensity_8backends_6cython_8_core_cy_major_version(0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 45, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -2607,7 +2607,7 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_major_version(C
   return __pyx_r;
 }
 
-/* "pydensity/backends/cython/_core_cy.pyx":44
+/* "pydensity/backends/cython/_core_cy.pyx":48
  *     return density_version_major()
  * 
  * cpdef inline uint8_t minor_version() nogil:             # <<<<<<<<<<<<<<
@@ -2619,7 +2619,7 @@ static PyObject *__pyx_pw_9pydensity_8backends_6cython_8_core_cy_3minor_version(
 static CYTHON_INLINE uint8_t __pyx_f_9pydensity_8backends_6cython_8_core_cy_minor_version(CYTHON_UNUSED int __pyx_skip_dispatch) {
   uint8_t __pyx_r;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":45
+  /* "pydensity/backends/cython/_core_cy.pyx":49
  * 
  * cpdef inline uint8_t minor_version() nogil:
  *     return density_version_minor()             # <<<<<<<<<<<<<<
@@ -2629,7 +2629,7 @@ static CYTHON_INLINE uint8_t __pyx_f_9pydensity_8backends_6cython_8_core_cy_mino
   __pyx_r = density_version_minor();
   goto __pyx_L0;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":44
+  /* "pydensity/backends/cython/_core_cy.pyx":48
  *     return density_version_major()
  * 
  * cpdef inline uint8_t minor_version() nogil:             # <<<<<<<<<<<<<<
@@ -2665,7 +2665,7 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_2minor_version(
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("minor_version", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_uint8_t(__pyx_f_9pydensity_8backends_6cython_8_core_cy_minor_version(0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 44, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_uint8_t(__pyx_f_9pydensity_8backends_6cython_8_core_cy_minor_version(0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -2682,7 +2682,7 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_2minor_version(
   return __pyx_r;
 }
 
-/* "pydensity/backends/cython/_core_cy.pyx":47
+/* "pydensity/backends/cython/_core_cy.pyx":51
  *     return density_version_minor()
  * 
  * cpdef inline uint8_t revision_version() nogil:             # <<<<<<<<<<<<<<
@@ -2694,7 +2694,7 @@ static PyObject *__pyx_pw_9pydensity_8backends_6cython_8_core_cy_5revision_versi
 static CYTHON_INLINE uint8_t __pyx_f_9pydensity_8backends_6cython_8_core_cy_revision_version(CYTHON_UNUSED int __pyx_skip_dispatch) {
   uint8_t __pyx_r;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":48
+  /* "pydensity/backends/cython/_core_cy.pyx":52
  * 
  * cpdef inline uint8_t revision_version() nogil:
  *     return density_version_revision()             # <<<<<<<<<<<<<<
@@ -2704,7 +2704,7 @@ static CYTHON_INLINE uint8_t __pyx_f_9pydensity_8backends_6cython_8_core_cy_revi
   __pyx_r = density_version_revision();
   goto __pyx_L0;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":47
+  /* "pydensity/backends/cython/_core_cy.pyx":51
  *     return density_version_minor()
  * 
  * cpdef inline uint8_t revision_version() nogil:             # <<<<<<<<<<<<<<
@@ -2740,7 +2740,7 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_4revision_versi
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("revision_version", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_uint8_t(__pyx_f_9pydensity_8backends_6cython_8_core_cy_revision_version(0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 47, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_uint8_t(__pyx_f_9pydensity_8backends_6cython_8_core_cy_revision_version(0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -2757,7 +2757,7 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_4revision_versi
   return __pyx_r;
 }
 
-/* "pydensity/backends/cython/_core_cy.pyx":50
+/* "pydensity/backends/cython/_core_cy.pyx":54
  *     return density_version_revision()
  * 
  * cpdef inline size_t get_dictionary_size(object algorithm):             # <<<<<<<<<<<<<<
@@ -2779,34 +2779,34 @@ static CYTHON_INLINE size_t __pyx_f_9pydensity_8backends_6cython_8_core_cy_get_d
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_dictionary_size", 0);
 
-  /* "pydensity/backends/cython/_core_cy.pyx":51
+  /* "pydensity/backends/cython/_core_cy.pyx":55
  * 
  * cpdef inline size_t get_dictionary_size(object algorithm):
  *     if not isinstance(algorithm, Algorithm):             # <<<<<<<<<<<<<<
  *         raise ValueError("algorithm should be an instance of Algorithm")
  *     cdef DENSITY_ALGORITHM v = algorithm.value
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Algorithm); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Algorithm); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 55, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyObject_IsInstance(__pyx_v_algorithm, __pyx_t_1); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 51, __pyx_L1_error)
+  __pyx_t_2 = PyObject_IsInstance(__pyx_v_algorithm, __pyx_t_1); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 55, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = ((!(__pyx_t_2 != 0)) != 0);
   if (unlikely(__pyx_t_3)) {
 
-    /* "pydensity/backends/cython/_core_cy.pyx":52
+    /* "pydensity/backends/cython/_core_cy.pyx":56
  * cpdef inline size_t get_dictionary_size(object algorithm):
  *     if not isinstance(algorithm, Algorithm):
  *         raise ValueError("algorithm should be an instance of Algorithm")             # <<<<<<<<<<<<<<
  *     cdef DENSITY_ALGORITHM v = algorithm.value
  *     with nogil:
  */
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 52, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 56, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 52, __pyx_L1_error)
+    __PYX_ERR(0, 56, __pyx_L1_error)
 
-    /* "pydensity/backends/cython/_core_cy.pyx":51
+    /* "pydensity/backends/cython/_core_cy.pyx":55
  * 
  * cpdef inline size_t get_dictionary_size(object algorithm):
  *     if not isinstance(algorithm, Algorithm):             # <<<<<<<<<<<<<<
@@ -2815,20 +2815,20 @@ static CYTHON_INLINE size_t __pyx_f_9pydensity_8backends_6cython_8_core_cy_get_d
  */
   }
 
-  /* "pydensity/backends/cython/_core_cy.pyx":53
+  /* "pydensity/backends/cython/_core_cy.pyx":57
  *     if not isinstance(algorithm, Algorithm):
  *         raise ValueError("algorithm should be an instance of Algorithm")
  *     cdef DENSITY_ALGORITHM v = algorithm.value             # <<<<<<<<<<<<<<
  *     with nogil:
  *         return density_get_dictionary_size(v)
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_algorithm, __pyx_n_s_value); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_algorithm, __pyx_n_s_value); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_4 = ((DENSITY_ALGORITHM)__Pyx_PyInt_As_DENSITY_ALGORITHM(__pyx_t_1)); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 53, __pyx_L1_error)
+  __pyx_t_4 = ((DENSITY_ALGORITHM)__Pyx_PyInt_As_DENSITY_ALGORITHM(__pyx_t_1)); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_v = __pyx_t_4;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":54
+  /* "pydensity/backends/cython/_core_cy.pyx":58
  *         raise ValueError("algorithm should be an instance of Algorithm")
  *     cdef DENSITY_ALGORITHM v = algorithm.value
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -2843,7 +2843,7 @@ static CYTHON_INLINE size_t __pyx_f_9pydensity_8backends_6cython_8_core_cy_get_d
       #endif
       /*try:*/ {
 
-        /* "pydensity/backends/cython/_core_cy.pyx":55
+        /* "pydensity/backends/cython/_core_cy.pyx":59
  *     cdef DENSITY_ALGORITHM v = algorithm.value
  *     with nogil:
  *         return density_get_dictionary_size(v)             # <<<<<<<<<<<<<<
@@ -2854,7 +2854,7 @@ static CYTHON_INLINE size_t __pyx_f_9pydensity_8backends_6cython_8_core_cy_get_d
         goto __pyx_L4_return;
       }
 
-      /* "pydensity/backends/cython/_core_cy.pyx":54
+      /* "pydensity/backends/cython/_core_cy.pyx":58
  *         raise ValueError("algorithm should be an instance of Algorithm")
  *     cdef DENSITY_ALGORITHM v = algorithm.value
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -2872,7 +2872,7 @@ static CYTHON_INLINE size_t __pyx_f_9pydensity_8backends_6cython_8_core_cy_get_d
       }
   }
 
-  /* "pydensity/backends/cython/_core_cy.pyx":50
+  /* "pydensity/backends/cython/_core_cy.pyx":54
  *     return density_version_revision()
  * 
  * cpdef inline size_t get_dictionary_size(object algorithm):             # <<<<<<<<<<<<<<
@@ -2913,7 +2913,7 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_6get_dictionary
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_dictionary_size", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_FromSize_t(__pyx_f_9pydensity_8backends_6cython_8_core_cy_get_dictionary_size(__pyx_v_algorithm, 0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_FromSize_t(__pyx_f_9pydensity_8backends_6cython_8_core_cy_get_dictionary_size(__pyx_v_algorithm, 0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 54, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -2930,7 +2930,7 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_6get_dictionary
   return __pyx_r;
 }
 
-/* "pydensity/backends/cython/_core_cy.pyx":57
+/* "pydensity/backends/cython/_core_cy.pyx":61
  *         return density_get_dictionary_size(v)
  * 
  * cpdef inline uint_fast64_t compress_safe_size(const uint_fast64_t input_size) nogil:             # <<<<<<<<<<<<<<
@@ -2942,7 +2942,7 @@ static PyObject *__pyx_pw_9pydensity_8backends_6cython_8_core_cy_9compress_safe_
 static CYTHON_INLINE uint_fast64_t __pyx_f_9pydensity_8backends_6cython_8_core_cy_compress_safe_size(uint_fast64_t const __pyx_v_input_size, CYTHON_UNUSED int __pyx_skip_dispatch) {
   uint_fast64_t __pyx_r;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":58
+  /* "pydensity/backends/cython/_core_cy.pyx":62
  * 
  * cpdef inline uint_fast64_t compress_safe_size(const uint_fast64_t input_size) nogil:
  *     return density_compress_safe_size(input_size)             # <<<<<<<<<<<<<<
@@ -2952,7 +2952,7 @@ static CYTHON_INLINE uint_fast64_t __pyx_f_9pydensity_8backends_6cython_8_core_c
   __pyx_r = density_compress_safe_size(__pyx_v_input_size);
   goto __pyx_L0;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":57
+  /* "pydensity/backends/cython/_core_cy.pyx":61
  *         return density_get_dictionary_size(v)
  * 
  * cpdef inline uint_fast64_t compress_safe_size(const uint_fast64_t input_size) nogil:             # <<<<<<<<<<<<<<
@@ -2977,7 +2977,7 @@ static PyObject *__pyx_pw_9pydensity_8backends_6cython_8_core_cy_9compress_safe_
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("compress_safe_size (wrapper)", 0);
   assert(__pyx_arg_input_size); {
-    __pyx_v_input_size = __Pyx_PyInt_As_uint_fast64_t(__pyx_arg_input_size); if (unlikely((__pyx_v_input_size == ((uint_fast64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 57, __pyx_L3_error)
+    __pyx_v_input_size = __Pyx_PyInt_As_uint_fast64_t(__pyx_arg_input_size); if (unlikely((__pyx_v_input_size == ((uint_fast64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 61, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -3001,7 +3001,7 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_8compress_safe_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("compress_safe_size", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_uint_fast64_t(__pyx_f_9pydensity_8backends_6cython_8_core_cy_compress_safe_size(__pyx_v_input_size, 0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 57, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_uint_fast64_t(__pyx_f_9pydensity_8backends_6cython_8_core_cy_compress_safe_size(__pyx_v_input_size, 0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -3018,7 +3018,7 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_8compress_safe_
   return __pyx_r;
 }
 
-/* "pydensity/backends/cython/_core_cy.pyx":60
+/* "pydensity/backends/cython/_core_cy.pyx":64
  *     return density_compress_safe_size(input_size)
  * 
  * cpdef inline uint_fast64_t decompress_safe_size(const uint_fast64_t input_size) nogil:             # <<<<<<<<<<<<<<
@@ -3030,7 +3030,7 @@ static PyObject *__pyx_pw_9pydensity_8backends_6cython_8_core_cy_11decompress_sa
 static CYTHON_INLINE uint_fast64_t __pyx_f_9pydensity_8backends_6cython_8_core_cy_decompress_safe_size(uint_fast64_t const __pyx_v_input_size, CYTHON_UNUSED int __pyx_skip_dispatch) {
   uint_fast64_t __pyx_r;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":61
+  /* "pydensity/backends/cython/_core_cy.pyx":65
  * 
  * cpdef inline uint_fast64_t decompress_safe_size(const uint_fast64_t input_size) nogil:
  *     return density_decompress_safe_size(input_size)             # <<<<<<<<<<<<<<
@@ -3040,7 +3040,7 @@ static CYTHON_INLINE uint_fast64_t __pyx_f_9pydensity_8backends_6cython_8_core_c
   __pyx_r = density_decompress_safe_size(__pyx_v_input_size);
   goto __pyx_L0;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":60
+  /* "pydensity/backends/cython/_core_cy.pyx":64
  *     return density_compress_safe_size(input_size)
  * 
  * cpdef inline uint_fast64_t decompress_safe_size(const uint_fast64_t input_size) nogil:             # <<<<<<<<<<<<<<
@@ -3065,7 +3065,7 @@ static PyObject *__pyx_pw_9pydensity_8backends_6cython_8_core_cy_11decompress_sa
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("decompress_safe_size (wrapper)", 0);
   assert(__pyx_arg_input_size); {
-    __pyx_v_input_size = __Pyx_PyInt_As_uint_fast64_t(__pyx_arg_input_size); if (unlikely((__pyx_v_input_size == ((uint_fast64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 60, __pyx_L3_error)
+    __pyx_v_input_size = __Pyx_PyInt_As_uint_fast64_t(__pyx_arg_input_size); if (unlikely((__pyx_v_input_size == ((uint_fast64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -3089,7 +3089,7 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_10decompress_sa
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("decompress_safe_size", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_uint_fast64_t(__pyx_f_9pydensity_8backends_6cython_8_core_cy_decompress_safe_size(__pyx_v_input_size, 0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 60, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_uint_fast64_t(__pyx_f_9pydensity_8backends_6cython_8_core_cy_decompress_safe_size(__pyx_v_input_size, 0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 64, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -3106,7 +3106,7 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_10decompress_sa
   return __pyx_r;
 }
 
-/* "pydensity/backends/cython/_core_cy.pyx":63
+/* "pydensity/backends/cython/_core_cy.pyx":67
  *     return density_decompress_safe_size(input_size)
  * 
  * cdef inline void* mem_alloc(size_t size) nogil:             # <<<<<<<<<<<<<<
@@ -3122,7 +3122,7 @@ static CYTHON_INLINE void *__pyx_f_9pydensity_8backends_6cython_8_core_cy_mem_al
   #endif
   __Pyx_RefNannySetupContext("mem_alloc", 1);
 
-  /* "pydensity/backends/cython/_core_cy.pyx":64
+  /* "pydensity/backends/cython/_core_cy.pyx":68
  * 
  * cdef inline void* mem_alloc(size_t size) nogil:
  *     with gil:             # <<<<<<<<<<<<<<
@@ -3136,7 +3136,7 @@ static CYTHON_INLINE void *__pyx_f_9pydensity_8backends_6cython_8_core_cy_mem_al
         #endif
         /*try:*/ {
 
-          /* "pydensity/backends/cython/_core_cy.pyx":65
+          /* "pydensity/backends/cython/_core_cy.pyx":69
  * cdef inline void* mem_alloc(size_t size) nogil:
  *     with gil:
  *         return PyMem_Malloc(size)             # <<<<<<<<<<<<<<
@@ -3147,7 +3147,7 @@ static CYTHON_INLINE void *__pyx_f_9pydensity_8backends_6cython_8_core_cy_mem_al
           goto __pyx_L6_return;
         }
 
-        /* "pydensity/backends/cython/_core_cy.pyx":64
+        /* "pydensity/backends/cython/_core_cy.pyx":68
  * 
  * cdef inline void* mem_alloc(size_t size) nogil:
  *     with gil:             # <<<<<<<<<<<<<<
@@ -3173,7 +3173,7 @@ static CYTHON_INLINE void *__pyx_f_9pydensity_8backends_6cython_8_core_cy_mem_al
     }
   }
 
-  /* "pydensity/backends/cython/_core_cy.pyx":63
+  /* "pydensity/backends/cython/_core_cy.pyx":67
  *     return density_decompress_safe_size(input_size)
  * 
  * cdef inline void* mem_alloc(size_t size) nogil:             # <<<<<<<<<<<<<<
@@ -3190,7 +3190,7 @@ static CYTHON_INLINE void *__pyx_f_9pydensity_8backends_6cython_8_core_cy_mem_al
   return __pyx_r;
 }
 
-/* "pydensity/backends/cython/_core_cy.pyx":67
+/* "pydensity/backends/cython/_core_cy.pyx":71
  *         return PyMem_Malloc(size)
  * 
  * cdef inline void mem_free(void* p) nogil:             # <<<<<<<<<<<<<<
@@ -3205,7 +3205,7 @@ static CYTHON_INLINE void __pyx_f_9pydensity_8backends_6cython_8_core_cy_mem_fre
   #endif
   __Pyx_RefNannySetupContext("mem_free", 1);
 
-  /* "pydensity/backends/cython/_core_cy.pyx":68
+  /* "pydensity/backends/cython/_core_cy.pyx":72
  * 
  * cdef inline void mem_free(void* p) nogil:
  *     with gil:             # <<<<<<<<<<<<<<
@@ -3219,7 +3219,7 @@ static CYTHON_INLINE void __pyx_f_9pydensity_8backends_6cython_8_core_cy_mem_fre
         #endif
         /*try:*/ {
 
-          /* "pydensity/backends/cython/_core_cy.pyx":69
+          /* "pydensity/backends/cython/_core_cy.pyx":73
  * cdef inline void mem_free(void* p) nogil:
  *     with gil:
  *         PyMem_Free(p)             # <<<<<<<<<<<<<<
@@ -3229,7 +3229,7 @@ static CYTHON_INLINE void __pyx_f_9pydensity_8backends_6cython_8_core_cy_mem_fre
           PyMem_Free(__pyx_v_p);
         }
 
-        /* "pydensity/backends/cython/_core_cy.pyx":68
+        /* "pydensity/backends/cython/_core_cy.pyx":72
  * 
  * cdef inline void mem_free(void* p) nogil:
  *     with gil:             # <<<<<<<<<<<<<<
@@ -3257,7 +3257,7 @@ static CYTHON_INLINE void __pyx_f_9pydensity_8backends_6cython_8_core_cy_mem_fre
     __pyx_L5:;
   }
 
-  /* "pydensity/backends/cython/_core_cy.pyx":67
+  /* "pydensity/backends/cython/_core_cy.pyx":71
  *         return PyMem_Malloc(size)
  * 
  * cdef inline void mem_free(void* p) nogil:             # <<<<<<<<<<<<<<
@@ -3271,7 +3271,7 @@ static CYTHON_INLINE void __pyx_f_9pydensity_8backends_6cython_8_core_cy_mem_fre
   #endif
 }
 
-/* "pydensity/backends/cython/_core_cy.pyx":78
+/* "pydensity/backends/cython/_core_cy.pyx":82
  *     cdef density_context * context
  * 
  *     def __cinit__(self, object algorithm, bint custom_dictionary):             # <<<<<<<<<<<<<<
@@ -3313,11 +3313,11 @@ static int __pyx_pw_9pydensity_8backends_6cython_8_core_cy_10Compressor_1__cinit
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_custom_dictionary)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 2, 2, 1); __PYX_ERR(0, 78, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 2, 2, 1); __PYX_ERR(0, 82, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(0, 78, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(0, 82, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -3326,11 +3326,11 @@ static int __pyx_pw_9pydensity_8backends_6cython_8_core_cy_10Compressor_1__cinit
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
     __pyx_v_algorithm = values[0];
-    __pyx_v_custom_dictionary = __Pyx_PyObject_IsTrue(values[1]); if (unlikely((__pyx_v_custom_dictionary == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 78, __pyx_L3_error)
+    __pyx_v_custom_dictionary = __Pyx_PyObject_IsTrue(values[1]); if (unlikely((__pyx_v_custom_dictionary == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 82, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 78, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 82, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pydensity.backends.cython._core_cy.Compressor.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -3359,34 +3359,34 @@ static int __pyx_pf_9pydensity_8backends_6cython_8_core_cy_10Compressor___cinit_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "pydensity/backends/cython/_core_cy.pyx":79
+  /* "pydensity/backends/cython/_core_cy.pyx":83
  * 
  *     def __cinit__(self, object algorithm, bint custom_dictionary):
  *         if not isinstance(algorithm, Algorithm):             # <<<<<<<<<<<<<<
  *             raise ValueError("algorithm should be an instance of Algorithm")
  *         cdef DENSITY_ALGORITHM v = algorithm.value
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Algorithm); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 79, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Algorithm); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyObject_IsInstance(__pyx_v_algorithm, __pyx_t_1); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 79, __pyx_L1_error)
+  __pyx_t_2 = PyObject_IsInstance(__pyx_v_algorithm, __pyx_t_1); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = ((!(__pyx_t_2 != 0)) != 0);
   if (unlikely(__pyx_t_3)) {
 
-    /* "pydensity/backends/cython/_core_cy.pyx":80
+    /* "pydensity/backends/cython/_core_cy.pyx":84
  *     def __cinit__(self, object algorithm, bint custom_dictionary):
  *         if not isinstance(algorithm, Algorithm):
  *             raise ValueError("algorithm should be an instance of Algorithm")             # <<<<<<<<<<<<<<
  *         cdef DENSITY_ALGORITHM v = algorithm.value
  *         cdef density_processing_result result = density_compress_prepare_context(v, custom_dictionary,
  */
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 80, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 84, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 80, __pyx_L1_error)
+    __PYX_ERR(0, 84, __pyx_L1_error)
 
-    /* "pydensity/backends/cython/_core_cy.pyx":79
+    /* "pydensity/backends/cython/_core_cy.pyx":83
  * 
  *     def __cinit__(self, object algorithm, bint custom_dictionary):
  *         if not isinstance(algorithm, Algorithm):             # <<<<<<<<<<<<<<
@@ -3395,20 +3395,20 @@ static int __pyx_pf_9pydensity_8backends_6cython_8_core_cy_10Compressor___cinit_
  */
   }
 
-  /* "pydensity/backends/cython/_core_cy.pyx":81
+  /* "pydensity/backends/cython/_core_cy.pyx":85
  *         if not isinstance(algorithm, Algorithm):
  *             raise ValueError("algorithm should be an instance of Algorithm")
  *         cdef DENSITY_ALGORITHM v = algorithm.value             # <<<<<<<<<<<<<<
  *         cdef density_processing_result result = density_compress_prepare_context(v, custom_dictionary,
  *                                                                                  mem_alloc)
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_algorithm, __pyx_n_s_value); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 81, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_algorithm, __pyx_n_s_value); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 85, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_4 = ((DENSITY_ALGORITHM)__Pyx_PyInt_As_DENSITY_ALGORITHM(__pyx_t_1)); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 81, __pyx_L1_error)
+  __pyx_t_4 = ((DENSITY_ALGORITHM)__Pyx_PyInt_As_DENSITY_ALGORITHM(__pyx_t_1)); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 85, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_v = __pyx_t_4;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":82
+  /* "pydensity/backends/cython/_core_cy.pyx":86
  *             raise ValueError("algorithm should be an instance of Algorithm")
  *         cdef DENSITY_ALGORITHM v = algorithm.value
  *         cdef density_processing_result result = density_compress_prepare_context(v, custom_dictionary,             # <<<<<<<<<<<<<<
@@ -3417,7 +3417,7 @@ static int __pyx_pf_9pydensity_8backends_6cython_8_core_cy_10Compressor___cinit_
  */
   __pyx_v_result = density_compress_prepare_context(__pyx_v_v, __pyx_v_custom_dictionary, __pyx_f_9pydensity_8backends_6cython_8_core_cy_mem_alloc);
 
-  /* "pydensity/backends/cython/_core_cy.pyx":84
+  /* "pydensity/backends/cython/_core_cy.pyx":88
  *         cdef density_processing_result result = density_compress_prepare_context(v, custom_dictionary,
  *                                                                                  mem_alloc)
  *         self.c_state = result.state             # <<<<<<<<<<<<<<
@@ -3427,7 +3427,7 @@ static int __pyx_pf_9pydensity_8backends_6cython_8_core_cy_10Compressor___cinit_
   __pyx_t_5 = __pyx_v_result.state;
   __pyx_v_self->c_state = __pyx_t_5;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":85
+  /* "pydensity/backends/cython/_core_cy.pyx":89
  *                                                                                  mem_alloc)
  *         self.c_state = result.state
  *         self.context = result.context             # <<<<<<<<<<<<<<
@@ -3437,7 +3437,7 @@ static int __pyx_pf_9pydensity_8backends_6cython_8_core_cy_10Compressor___cinit_
   __pyx_t_6 = __pyx_v_result.context;
   __pyx_v_self->context = __pyx_t_6;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":78
+  /* "pydensity/backends/cython/_core_cy.pyx":82
  *     cdef density_context * context
  * 
  *     def __cinit__(self, object algorithm, bint custom_dictionary):             # <<<<<<<<<<<<<<
@@ -3457,7 +3457,7 @@ static int __pyx_pf_9pydensity_8backends_6cython_8_core_cy_10Compressor___cinit_
   return __pyx_r;
 }
 
-/* "pydensity/backends/cython/_core_cy.pyx":88
+/* "pydensity/backends/cython/_core_cy.pyx":92
  * 
  *     @property
  *     def state(self):             # <<<<<<<<<<<<<<
@@ -3487,7 +3487,7 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_10Compressor_5s
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pydensity/backends/cython/_core_cy.pyx":89
+  /* "pydensity/backends/cython/_core_cy.pyx":93
  *     @property
  *     def state(self):
  *         return self.c_state             # <<<<<<<<<<<<<<
@@ -3495,13 +3495,13 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_10Compressor_5s
  *     cpdef inline bytes compress(self, const uint8_t[::1] data):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_DENSITY_STATE(__pyx_v_self->c_state); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 89, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_DENSITY_STATE(__pyx_v_self->c_state); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 93, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":88
+  /* "pydensity/backends/cython/_core_cy.pyx":92
  * 
  *     @property
  *     def state(self):             # <<<<<<<<<<<<<<
@@ -3520,7 +3520,7 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_10Compressor_5s
   return __pyx_r;
 }
 
-/* "pydensity/backends/cython/_core_cy.pyx":91
+/* "pydensity/backends/cython/_core_cy.pyx":95
  *         return self.c_state
  * 
  *     cpdef inline bytes compress(self, const uint8_t[::1] data):             # <<<<<<<<<<<<<<
@@ -3547,7 +3547,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_10
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("compress", 0);
 
-  /* "pydensity/backends/cython/_core_cy.pyx":92
+  /* "pydensity/backends/cython/_core_cy.pyx":96
  * 
  *     cpdef inline bytes compress(self, const uint8_t[::1] data):
  *         cdef uint_fast64_t input_size  = <uint_fast64_t>data.shape[0]             # <<<<<<<<<<<<<<
@@ -3556,7 +3556,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_10
  */
   __pyx_v_input_size = ((uint_fast64_t)(__pyx_v_data.shape[0]));
 
-  /* "pydensity/backends/cython/_core_cy.pyx":93
+  /* "pydensity/backends/cython/_core_cy.pyx":97
  *     cpdef inline bytes compress(self, const uint8_t[::1] data):
  *         cdef uint_fast64_t input_size  = <uint_fast64_t>data.shape[0]
  *         cdef uint_fast64_t out_size = density_compress_safe_size(input_size)             # <<<<<<<<<<<<<<
@@ -3565,19 +3565,19 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_10
  */
   __pyx_v_out_size = density_compress_safe_size(__pyx_v_input_size);
 
-  /* "pydensity/backends/cython/_core_cy.pyx":94
+  /* "pydensity/backends/cython/_core_cy.pyx":98
  *         cdef uint_fast64_t input_size  = <uint_fast64_t>data.shape[0]
  *         cdef uint_fast64_t out_size = density_compress_safe_size(input_size)
  *         cdef bytes out = PyBytes_FromStringAndSize(NULL,<Py_ssize_t>out_size)             # <<<<<<<<<<<<<<
  *         if <void*>out == NULL:
  *             raise
  */
-  __pyx_t_1 = PyBytes_FromStringAndSize(NULL, ((Py_ssize_t)__pyx_v_out_size)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 94, __pyx_L1_error)
+  __pyx_t_1 = PyBytes_FromStringAndSize(NULL, ((Py_ssize_t)__pyx_v_out_size)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 98, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_out = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":95
+  /* "pydensity/backends/cython/_core_cy.pyx":99
  *         cdef uint_fast64_t out_size = density_compress_safe_size(input_size)
  *         cdef bytes out = PyBytes_FromStringAndSize(NULL,<Py_ssize_t>out_size)
  *         if <void*>out == NULL:             # <<<<<<<<<<<<<<
@@ -3587,16 +3587,16 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_10
   __pyx_t_2 = ((((void *)__pyx_v_out) == NULL) != 0);
   if (unlikely(__pyx_t_2)) {
 
-    /* "pydensity/backends/cython/_core_cy.pyx":96
+    /* "pydensity/backends/cython/_core_cy.pyx":100
  *         cdef bytes out = PyBytes_FromStringAndSize(NULL,<Py_ssize_t>out_size)
  *         if <void*>out == NULL:
  *             raise             # <<<<<<<<<<<<<<
  *         cdef uint8_t* out_ptr = <uint8_t* > PyBytes_AS_STRING(out)
  *         cdef density_processing_result result
  */
-    __Pyx_ReraiseException(); __PYX_ERR(0, 96, __pyx_L1_error)
+    __Pyx_ReraiseException(); __PYX_ERR(0, 100, __pyx_L1_error)
 
-    /* "pydensity/backends/cython/_core_cy.pyx":95
+    /* "pydensity/backends/cython/_core_cy.pyx":99
  *         cdef uint_fast64_t out_size = density_compress_safe_size(input_size)
  *         cdef bytes out = PyBytes_FromStringAndSize(NULL,<Py_ssize_t>out_size)
  *         if <void*>out == NULL:             # <<<<<<<<<<<<<<
@@ -3605,7 +3605,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_10
  */
   }
 
-  /* "pydensity/backends/cython/_core_cy.pyx":97
+  /* "pydensity/backends/cython/_core_cy.pyx":101
  *         if <void*>out == NULL:
  *             raise
  *         cdef uint8_t* out_ptr = <uint8_t* > PyBytes_AS_STRING(out)             # <<<<<<<<<<<<<<
@@ -3614,7 +3614,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_10
  */
   __pyx_v_out_ptr = ((uint8_t *)PyBytes_AS_STRING(__pyx_v_out));
 
-  /* "pydensity/backends/cython/_core_cy.pyx":99
+  /* "pydensity/backends/cython/_core_cy.pyx":103
  *         cdef uint8_t* out_ptr = <uint8_t* > PyBytes_AS_STRING(out)
  *         cdef density_processing_result result
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -3629,7 +3629,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_10
       #endif
       /*try:*/ {
 
-        /* "pydensity/backends/cython/_core_cy.pyx":100
+        /* "pydensity/backends/cython/_core_cy.pyx":104
  *         cdef density_processing_result result
  *         with nogil:
  *             result = density_compress_with_context(&data[0],input_size,out_ptr,out_size, self.context)             # <<<<<<<<<<<<<<
@@ -3640,7 +3640,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_10
         __pyx_v_result = density_compress_with_context((&(*((uint8_t const  *) ( /* dim=0 */ ((char *) (((uint8_t const  *) __pyx_v_data.data) + __pyx_t_3)) )))), __pyx_v_input_size, __pyx_v_out_ptr, __pyx_v_out_size, __pyx_v_self->context);
       }
 
-      /* "pydensity/backends/cython/_core_cy.pyx":99
+      /* "pydensity/backends/cython/_core_cy.pyx":103
  *         cdef uint8_t* out_ptr = <uint8_t* > PyBytes_AS_STRING(out)
  *         cdef density_processing_result result
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -3659,7 +3659,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_10
       }
   }
 
-  /* "pydensity/backends/cython/_core_cy.pyx":101
+  /* "pydensity/backends/cython/_core_cy.pyx":105
  *         with nogil:
  *             result = density_compress_with_context(&data[0],input_size,out_ptr,out_size, self.context)
  *         if result.state != DENSITY_STATE_OK:             # <<<<<<<<<<<<<<
@@ -3669,23 +3669,23 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_10
   __pyx_t_2 = ((__pyx_v_result.state != DENSITY_STATE_OK) != 0);
   if (unlikely(__pyx_t_2)) {
 
-    /* "pydensity/backends/cython/_core_cy.pyx":102
+    /* "pydensity/backends/cython/_core_cy.pyx":106
  *             result = density_compress_with_context(&data[0],input_size,out_ptr,out_size, self.context)
  *         if result.state != DENSITY_STATE_OK:
  *             raise ValueError(format_state(result.state))             # <<<<<<<<<<<<<<
  *         self.c_state = result.state
  *         return out[:result.bytesWritten]
  */
-    __pyx_t_1 = __pyx_f_9pydensity_8backends_6cython_8_core_cy_format_state(__pyx_v_result.state); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 102, __pyx_L1_error)
+    __pyx_t_1 = __pyx_f_9pydensity_8backends_6cython_8_core_cy_format_state(__pyx_v_result.state); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 106, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 102, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 106, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_Raise(__pyx_t_4, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __PYX_ERR(0, 102, __pyx_L1_error)
+    __PYX_ERR(0, 106, __pyx_L1_error)
 
-    /* "pydensity/backends/cython/_core_cy.pyx":101
+    /* "pydensity/backends/cython/_core_cy.pyx":105
  *         with nogil:
  *             result = density_compress_with_context(&data[0],input_size,out_ptr,out_size, self.context)
  *         if result.state != DENSITY_STATE_OK:             # <<<<<<<<<<<<<<
@@ -3694,7 +3694,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_10
  */
   }
 
-  /* "pydensity/backends/cython/_core_cy.pyx":103
+  /* "pydensity/backends/cython/_core_cy.pyx":107
  *         if result.state != DENSITY_STATE_OK:
  *             raise ValueError(format_state(result.state))
  *         self.c_state = result.state             # <<<<<<<<<<<<<<
@@ -3704,7 +3704,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_10
   __pyx_t_5 = __pyx_v_result.state;
   __pyx_v_self->c_state = __pyx_t_5;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":104
+  /* "pydensity/backends/cython/_core_cy.pyx":108
  *             raise ValueError(format_state(result.state))
  *         self.c_state = result.state
  *         return out[:result.bytesWritten]             # <<<<<<<<<<<<<<
@@ -3714,15 +3714,15 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_10
   __Pyx_XDECREF(__pyx_r);
   if (unlikely(__pyx_v_out == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-    __PYX_ERR(0, 104, __pyx_L1_error)
+    __PYX_ERR(0, 108, __pyx_L1_error)
   }
-  __pyx_t_4 = PySequence_GetSlice(__pyx_v_out, 0, __pyx_v_result.bytesWritten); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 104, __pyx_L1_error)
+  __pyx_t_4 = PySequence_GetSlice(__pyx_v_out, 0, __pyx_v_result.bytesWritten); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 108, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_r = ((PyObject*)__pyx_t_4);
   __pyx_t_4 = 0;
   goto __pyx_L0;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":91
+  /* "pydensity/backends/cython/_core_cy.pyx":95
  *         return self.c_state
  * 
  *     cpdef inline bytes compress(self, const uint8_t[::1] data):             # <<<<<<<<<<<<<<
@@ -3755,7 +3755,7 @@ static PyObject *__pyx_pw_9pydensity_8backends_6cython_8_core_cy_10Compressor_3c
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("compress (wrapper)", 0);
   assert(__pyx_arg_data); {
-    __pyx_v_data = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t__const__(__pyx_arg_data, 0); if (unlikely(!__pyx_v_data.memview)) __PYX_ERR(0, 91, __pyx_L3_error)
+    __pyx_v_data = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t__const__(__pyx_arg_data, 0); if (unlikely(!__pyx_v_data.memview)) __PYX_ERR(0, 95, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -3779,8 +3779,8 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_10Compressor_2c
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("compress", 0);
   __Pyx_XDECREF(__pyx_r);
-  if (unlikely(!__pyx_v_data.memview)) { __Pyx_RaiseUnboundLocalError("data"); __PYX_ERR(0, 91, __pyx_L1_error) }
-  __pyx_t_1 = __pyx_f_9pydensity_8backends_6cython_8_core_cy_10Compressor_compress(__pyx_v_self, __pyx_v_data, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 91, __pyx_L1_error)
+  if (unlikely(!__pyx_v_data.memview)) { __Pyx_RaiseUnboundLocalError("data"); __PYX_ERR(0, 95, __pyx_L1_error) }
+  __pyx_t_1 = __pyx_f_9pydensity_8backends_6cython_8_core_cy_10Compressor_compress(__pyx_v_self, __pyx_v_data, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 95, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -3798,7 +3798,7 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_10Compressor_2c
   return __pyx_r;
 }
 
-/* "pydensity/backends/cython/_core_cy.pyx":106
+/* "pydensity/backends/cython/_core_cy.pyx":110
  *         return out[:result.bytesWritten]
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -3821,7 +3821,7 @@ static void __pyx_pf_9pydensity_8backends_6cython_8_core_cy_10Compressor_4__deal
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "pydensity/backends/cython/_core_cy.pyx":107
+  /* "pydensity/backends/cython/_core_cy.pyx":111
  * 
  *     def __dealloc__(self):
  *         density_free_context(self.context, mem_free)             # <<<<<<<<<<<<<<
@@ -3830,7 +3830,7 @@ static void __pyx_pf_9pydensity_8backends_6cython_8_core_cy_10Compressor_4__deal
  */
   density_free_context(__pyx_v_self->context, __pyx_f_9pydensity_8backends_6cython_8_core_cy_mem_free);
 
-  /* "pydensity/backends/cython/_core_cy.pyx":106
+  /* "pydensity/backends/cython/_core_cy.pyx":110
  *         return out[:result.bytesWritten]
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -3957,7 +3957,7 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_10Compressor_8_
   return __pyx_r;
 }
 
-/* "pydensity/backends/cython/_core_cy.pyx":116
+/* "pydensity/backends/cython/_core_cy.pyx":120
  *     cdef density_context * context
  * 
  *     def __cinit__(self, const uint8_t[::1] data, bint custom_dictionary):             # <<<<<<<<<<<<<<
@@ -3999,11 +3999,11 @@ static int __pyx_pw_9pydensity_8backends_6cython_8_core_cy_12DeCompressor_1__cin
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_custom_dictionary)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 2, 2, 1); __PYX_ERR(0, 116, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 2, 2, 1); __PYX_ERR(0, 120, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(0, 116, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(0, 120, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -4011,12 +4011,12 @@ static int __pyx_pw_9pydensity_8backends_6cython_8_core_cy_12DeCompressor_1__cin
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_data = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t__const__(values[0], 0); if (unlikely(!__pyx_v_data.memview)) __PYX_ERR(0, 116, __pyx_L3_error)
-    __pyx_v_custom_dictionary = __Pyx_PyObject_IsTrue(values[1]); if (unlikely((__pyx_v_custom_dictionary == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 116, __pyx_L3_error)
+    __pyx_v_data = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t__const__(values[0], 0); if (unlikely(!__pyx_v_data.memview)) __PYX_ERR(0, 120, __pyx_L3_error)
+    __pyx_v_custom_dictionary = __Pyx_PyObject_IsTrue(values[1]); if (unlikely((__pyx_v_custom_dictionary == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 120, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 116, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 120, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pydensity.backends.cython._core_cy.DeCompressor.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -4038,7 +4038,7 @@ static int __pyx_pf_9pydensity_8backends_6cython_8_core_cy_12DeCompressor___cini
   density_context *__pyx_t_3;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "pydensity/backends/cython/_core_cy.pyx":117
+  /* "pydensity/backends/cython/_core_cy.pyx":121
  * 
  *     def __cinit__(self, const uint8_t[::1] data, bint custom_dictionary):
  *         cdef density_processing_result result = density_decompress_prepare_context(&data[0],<uint_fast64_t>data.shape[0],custom_dictionary,             # <<<<<<<<<<<<<<
@@ -4047,7 +4047,7 @@ static int __pyx_pf_9pydensity_8backends_6cython_8_core_cy_12DeCompressor___cini
  */
   __pyx_t_1 = 0;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":118
+  /* "pydensity/backends/cython/_core_cy.pyx":122
  *     def __cinit__(self, const uint8_t[::1] data, bint custom_dictionary):
  *         cdef density_processing_result result = density_decompress_prepare_context(&data[0],<uint_fast64_t>data.shape[0],custom_dictionary,
  *                                                                                  mem_alloc)             # <<<<<<<<<<<<<<
@@ -4056,7 +4056,7 @@ static int __pyx_pf_9pydensity_8backends_6cython_8_core_cy_12DeCompressor___cini
  */
   __pyx_v_result = density_decompress_prepare_context((&(*((uint8_t const  *) ( /* dim=0 */ ((char *) (((uint8_t const  *) __pyx_v_data.data) + __pyx_t_1)) )))), ((uint_fast64_t)(__pyx_v_data.shape[0])), __pyx_v_custom_dictionary, __pyx_f_9pydensity_8backends_6cython_8_core_cy_mem_alloc);
 
-  /* "pydensity/backends/cython/_core_cy.pyx":119
+  /* "pydensity/backends/cython/_core_cy.pyx":123
  *         cdef density_processing_result result = density_decompress_prepare_context(&data[0],<uint_fast64_t>data.shape[0],custom_dictionary,
  *                                                                                  mem_alloc)
  *         self.c_state = result.state             # <<<<<<<<<<<<<<
@@ -4066,7 +4066,7 @@ static int __pyx_pf_9pydensity_8backends_6cython_8_core_cy_12DeCompressor___cini
   __pyx_t_2 = __pyx_v_result.state;
   __pyx_v_self->c_state = __pyx_t_2;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":120
+  /* "pydensity/backends/cython/_core_cy.pyx":124
  *                                                                                  mem_alloc)
  *         self.c_state = result.state
  *         self.context = result.context             # <<<<<<<<<<<<<<
@@ -4076,7 +4076,7 @@ static int __pyx_pf_9pydensity_8backends_6cython_8_core_cy_12DeCompressor___cini
   __pyx_t_3 = __pyx_v_result.context;
   __pyx_v_self->context = __pyx_t_3;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":116
+  /* "pydensity/backends/cython/_core_cy.pyx":120
  *     cdef density_context * context
  * 
  *     def __cinit__(self, const uint8_t[::1] data, bint custom_dictionary):             # <<<<<<<<<<<<<<
@@ -4091,7 +4091,7 @@ static int __pyx_pf_9pydensity_8backends_6cython_8_core_cy_12DeCompressor___cini
   return __pyx_r;
 }
 
-/* "pydensity/backends/cython/_core_cy.pyx":123
+/* "pydensity/backends/cython/_core_cy.pyx":127
  * 
  *     @property
  *     def state(self):             # <<<<<<<<<<<<<<
@@ -4121,7 +4121,7 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_12DeCompressor_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pydensity/backends/cython/_core_cy.pyx":124
+  /* "pydensity/backends/cython/_core_cy.pyx":128
  *     @property
  *     def state(self):
  *         return self.c_state             # <<<<<<<<<<<<<<
@@ -4129,13 +4129,13 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_12DeCompressor_
  *     cpdef inline bytes decompress(self, const uint8_t[::1] data, uint_fast64_t decompress_safe_size):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_DENSITY_STATE(__pyx_v_self->c_state); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 124, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_DENSITY_STATE(__pyx_v_self->c_state); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 128, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":123
+  /* "pydensity/backends/cython/_core_cy.pyx":127
  * 
  *     @property
  *     def state(self):             # <<<<<<<<<<<<<<
@@ -4154,7 +4154,7 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_12DeCompressor_
   return __pyx_r;
 }
 
-/* "pydensity/backends/cython/_core_cy.pyx":126
+/* "pydensity/backends/cython/_core_cy.pyx":130
  *         return self.c_state
  * 
  *     cpdef inline bytes decompress(self, const uint8_t[::1] data, uint_fast64_t decompress_safe_size):             # <<<<<<<<<<<<<<
@@ -4180,7 +4180,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_12
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("decompress", 0);
 
-  /* "pydensity/backends/cython/_core_cy.pyx":127
+  /* "pydensity/backends/cython/_core_cy.pyx":131
  * 
  *     cpdef inline bytes decompress(self, const uint8_t[::1] data, uint_fast64_t decompress_safe_size):
  *         cdef uint_fast64_t input_size = <uint_fast64_t> data.shape[0]             # <<<<<<<<<<<<<<
@@ -4189,19 +4189,19 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_12
  */
   __pyx_v_input_size = ((uint_fast64_t)(__pyx_v_data.shape[0]));
 
-  /* "pydensity/backends/cython/_core_cy.pyx":128
+  /* "pydensity/backends/cython/_core_cy.pyx":132
  *     cpdef inline bytes decompress(self, const uint8_t[::1] data, uint_fast64_t decompress_safe_size):
  *         cdef uint_fast64_t input_size = <uint_fast64_t> data.shape[0]
  *         cdef bytes out = PyBytes_FromStringAndSize(NULL, <Py_ssize_t> decompress_safe_size)             # <<<<<<<<<<<<<<
  *         if <void *> out == NULL:
  *             raise
  */
-  __pyx_t_1 = PyBytes_FromStringAndSize(NULL, ((Py_ssize_t)__pyx_v_decompress_safe_size)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 128, __pyx_L1_error)
+  __pyx_t_1 = PyBytes_FromStringAndSize(NULL, ((Py_ssize_t)__pyx_v_decompress_safe_size)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_out = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":129
+  /* "pydensity/backends/cython/_core_cy.pyx":133
  *         cdef uint_fast64_t input_size = <uint_fast64_t> data.shape[0]
  *         cdef bytes out = PyBytes_FromStringAndSize(NULL, <Py_ssize_t> decompress_safe_size)
  *         if <void *> out == NULL:             # <<<<<<<<<<<<<<
@@ -4211,16 +4211,16 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_12
   __pyx_t_2 = ((((void *)__pyx_v_out) == NULL) != 0);
   if (unlikely(__pyx_t_2)) {
 
-    /* "pydensity/backends/cython/_core_cy.pyx":130
+    /* "pydensity/backends/cython/_core_cy.pyx":134
  *         cdef bytes out = PyBytes_FromStringAndSize(NULL, <Py_ssize_t> decompress_safe_size)
  *         if <void *> out == NULL:
  *             raise             # <<<<<<<<<<<<<<
  *         cdef uint8_t * out_ptr = <uint8_t *> PyBytes_AS_STRING(out)
  *         cdef density_processing_result result
  */
-    __Pyx_ReraiseException(); __PYX_ERR(0, 130, __pyx_L1_error)
+    __Pyx_ReraiseException(); __PYX_ERR(0, 134, __pyx_L1_error)
 
-    /* "pydensity/backends/cython/_core_cy.pyx":129
+    /* "pydensity/backends/cython/_core_cy.pyx":133
  *         cdef uint_fast64_t input_size = <uint_fast64_t> data.shape[0]
  *         cdef bytes out = PyBytes_FromStringAndSize(NULL, <Py_ssize_t> decompress_safe_size)
  *         if <void *> out == NULL:             # <<<<<<<<<<<<<<
@@ -4229,7 +4229,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_12
  */
   }
 
-  /* "pydensity/backends/cython/_core_cy.pyx":131
+  /* "pydensity/backends/cython/_core_cy.pyx":135
  *         if <void *> out == NULL:
  *             raise
  *         cdef uint8_t * out_ptr = <uint8_t *> PyBytes_AS_STRING(out)             # <<<<<<<<<<<<<<
@@ -4238,7 +4238,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_12
  */
   __pyx_v_out_ptr = ((uint8_t *)PyBytes_AS_STRING(__pyx_v_out));
 
-  /* "pydensity/backends/cython/_core_cy.pyx":133
+  /* "pydensity/backends/cython/_core_cy.pyx":137
  *         cdef uint8_t * out_ptr = <uint8_t *> PyBytes_AS_STRING(out)
  *         cdef density_processing_result result
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -4253,7 +4253,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_12
       #endif
       /*try:*/ {
 
-        /* "pydensity/backends/cython/_core_cy.pyx":134
+        /* "pydensity/backends/cython/_core_cy.pyx":138
  *         cdef density_processing_result result
  *         with nogil:
  *             result = density_decompress_with_context(&data[0], input_size, out_ptr, decompress_safe_size, self.context)             # <<<<<<<<<<<<<<
@@ -4264,7 +4264,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_12
         __pyx_v_result = density_decompress_with_context((&(*((uint8_t const  *) ( /* dim=0 */ ((char *) (((uint8_t const  *) __pyx_v_data.data) + __pyx_t_3)) )))), __pyx_v_input_size, __pyx_v_out_ptr, __pyx_v_decompress_safe_size, __pyx_v_self->context);
       }
 
-      /* "pydensity/backends/cython/_core_cy.pyx":133
+      /* "pydensity/backends/cython/_core_cy.pyx":137
  *         cdef uint8_t * out_ptr = <uint8_t *> PyBytes_AS_STRING(out)
  *         cdef density_processing_result result
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -4283,7 +4283,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_12
       }
   }
 
-  /* "pydensity/backends/cython/_core_cy.pyx":135
+  /* "pydensity/backends/cython/_core_cy.pyx":139
  *         with nogil:
  *             result = density_decompress_with_context(&data[0], input_size, out_ptr, decompress_safe_size, self.context)
  *         if result.state != DENSITY_STATE_OK:             # <<<<<<<<<<<<<<
@@ -4293,23 +4293,23 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_12
   __pyx_t_2 = ((__pyx_v_result.state != DENSITY_STATE_OK) != 0);
   if (unlikely(__pyx_t_2)) {
 
-    /* "pydensity/backends/cython/_core_cy.pyx":136
+    /* "pydensity/backends/cython/_core_cy.pyx":140
  *             result = density_decompress_with_context(&data[0], input_size, out_ptr, decompress_safe_size, self.context)
  *         if result.state != DENSITY_STATE_OK:
  *             raise ValueError(format_state(result.state))             # <<<<<<<<<<<<<<
  *         self.c_state = result.state
  *         return out[:result.bytesWritten]
  */
-    __pyx_t_1 = __pyx_f_9pydensity_8backends_6cython_8_core_cy_format_state(__pyx_v_result.state); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 136, __pyx_L1_error)
+    __pyx_t_1 = __pyx_f_9pydensity_8backends_6cython_8_core_cy_format_state(__pyx_v_result.state); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 140, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 136, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 140, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_Raise(__pyx_t_4, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __PYX_ERR(0, 136, __pyx_L1_error)
+    __PYX_ERR(0, 140, __pyx_L1_error)
 
-    /* "pydensity/backends/cython/_core_cy.pyx":135
+    /* "pydensity/backends/cython/_core_cy.pyx":139
  *         with nogil:
  *             result = density_decompress_with_context(&data[0], input_size, out_ptr, decompress_safe_size, self.context)
  *         if result.state != DENSITY_STATE_OK:             # <<<<<<<<<<<<<<
@@ -4318,7 +4318,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_12
  */
   }
 
-  /* "pydensity/backends/cython/_core_cy.pyx":137
+  /* "pydensity/backends/cython/_core_cy.pyx":141
  *         if result.state != DENSITY_STATE_OK:
  *             raise ValueError(format_state(result.state))
  *         self.c_state = result.state             # <<<<<<<<<<<<<<
@@ -4328,7 +4328,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_12
   __pyx_t_5 = __pyx_v_result.state;
   __pyx_v_self->c_state = __pyx_t_5;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":138
+  /* "pydensity/backends/cython/_core_cy.pyx":142
  *             raise ValueError(format_state(result.state))
  *         self.c_state = result.state
  *         return out[:result.bytesWritten]             # <<<<<<<<<<<<<<
@@ -4338,15 +4338,15 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_12
   __Pyx_XDECREF(__pyx_r);
   if (unlikely(__pyx_v_out == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-    __PYX_ERR(0, 138, __pyx_L1_error)
+    __PYX_ERR(0, 142, __pyx_L1_error)
   }
-  __pyx_t_4 = PySequence_GetSlice(__pyx_v_out, 0, __pyx_v_result.bytesWritten); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 138, __pyx_L1_error)
+  __pyx_t_4 = PySequence_GetSlice(__pyx_v_out, 0, __pyx_v_result.bytesWritten); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 142, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_r = ((PyObject*)__pyx_t_4);
   __pyx_t_4 = 0;
   goto __pyx_L0;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":126
+  /* "pydensity/backends/cython/_core_cy.pyx":130
  *         return self.c_state
  * 
  *     cpdef inline bytes decompress(self, const uint8_t[::1] data, uint_fast64_t decompress_safe_size):             # <<<<<<<<<<<<<<
@@ -4402,11 +4402,11 @@ static PyObject *__pyx_pw_9pydensity_8backends_6cython_8_core_cy_12DeCompressor_
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_decompress_safe_size)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("decompress", 1, 2, 2, 1); __PYX_ERR(0, 126, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("decompress", 1, 2, 2, 1); __PYX_ERR(0, 130, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "decompress") < 0)) __PYX_ERR(0, 126, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "decompress") < 0)) __PYX_ERR(0, 130, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -4414,12 +4414,12 @@ static PyObject *__pyx_pw_9pydensity_8backends_6cython_8_core_cy_12DeCompressor_
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_data = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t__const__(values[0], 0); if (unlikely(!__pyx_v_data.memview)) __PYX_ERR(0, 126, __pyx_L3_error)
-    __pyx_v_decompress_safe_size = __Pyx_PyInt_As_uint_fast64_t(values[1]); if (unlikely((__pyx_v_decompress_safe_size == ((uint_fast64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 126, __pyx_L3_error)
+    __pyx_v_data = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t__const__(values[0], 0); if (unlikely(!__pyx_v_data.memview)) __PYX_ERR(0, 130, __pyx_L3_error)
+    __pyx_v_decompress_safe_size = __Pyx_PyInt_As_uint_fast64_t(values[1]); if (unlikely((__pyx_v_decompress_safe_size == ((uint_fast64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 130, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("decompress", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 126, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("decompress", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 130, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pydensity.backends.cython._core_cy.DeCompressor.decompress", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -4441,8 +4441,8 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_12DeCompressor_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("decompress", 0);
   __Pyx_XDECREF(__pyx_r);
-  if (unlikely(!__pyx_v_data.memview)) { __Pyx_RaiseUnboundLocalError("data"); __PYX_ERR(0, 126, __pyx_L1_error) }
-  __pyx_t_1 = __pyx_f_9pydensity_8backends_6cython_8_core_cy_12DeCompressor_decompress(__pyx_v_self, __pyx_v_data, __pyx_v_decompress_safe_size, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 126, __pyx_L1_error)
+  if (unlikely(!__pyx_v_data.memview)) { __Pyx_RaiseUnboundLocalError("data"); __PYX_ERR(0, 130, __pyx_L1_error) }
+  __pyx_t_1 = __pyx_f_9pydensity_8backends_6cython_8_core_cy_12DeCompressor_decompress(__pyx_v_self, __pyx_v_data, __pyx_v_decompress_safe_size, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -4460,7 +4460,7 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_12DeCompressor_
   return __pyx_r;
 }
 
-/* "pydensity/backends/cython/_core_cy.pyx":141
+/* "pydensity/backends/cython/_core_cy.pyx":145
  * 
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -4483,7 +4483,7 @@ static void __pyx_pf_9pydensity_8backends_6cython_8_core_cy_12DeCompressor_4__de
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "pydensity/backends/cython/_core_cy.pyx":142
+  /* "pydensity/backends/cython/_core_cy.pyx":146
  * 
  *     def __dealloc__(self):
  *         density_free_context(self.context, mem_free)             # <<<<<<<<<<<<<<
@@ -4492,7 +4492,7 @@ static void __pyx_pf_9pydensity_8backends_6cython_8_core_cy_12DeCompressor_4__de
  */
   density_free_context(__pyx_v_self->context, __pyx_f_9pydensity_8backends_6cython_8_core_cy_mem_free);
 
-  /* "pydensity/backends/cython/_core_cy.pyx":141
+  /* "pydensity/backends/cython/_core_cy.pyx":145
  * 
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -4619,7 +4619,7 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_12DeCompressor_
   return __pyx_r;
 }
 
-/* "pydensity/backends/cython/_core_cy.pyx":145
+/* "pydensity/backends/cython/_core_cy.pyx":149
  * 
  * 
  * cpdef inline bytes compress(const uint8_t[::1] data, object algorithm):             # <<<<<<<<<<<<<<
@@ -4648,34 +4648,34 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_co
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("compress", 0);
 
-  /* "pydensity/backends/cython/_core_cy.pyx":146
+  /* "pydensity/backends/cython/_core_cy.pyx":150
  * 
  * cpdef inline bytes compress(const uint8_t[::1] data, object algorithm):
  *     if not isinstance(algorithm, Algorithm):             # <<<<<<<<<<<<<<
  *         raise ValueError("algorithm should be an instance of Algorithm")
  *     cdef DENSITY_ALGORITHM v = algorithm.value
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Algorithm); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 146, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Algorithm); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 150, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyObject_IsInstance(__pyx_v_algorithm, __pyx_t_1); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 146, __pyx_L1_error)
+  __pyx_t_2 = PyObject_IsInstance(__pyx_v_algorithm, __pyx_t_1); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 150, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = ((!(__pyx_t_2 != 0)) != 0);
   if (unlikely(__pyx_t_3)) {
 
-    /* "pydensity/backends/cython/_core_cy.pyx":147
+    /* "pydensity/backends/cython/_core_cy.pyx":151
  * cpdef inline bytes compress(const uint8_t[::1] data, object algorithm):
  *     if not isinstance(algorithm, Algorithm):
  *         raise ValueError("algorithm should be an instance of Algorithm")             # <<<<<<<<<<<<<<
  *     cdef DENSITY_ALGORITHM v = algorithm.value
  * 
  */
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 147, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 151, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 147, __pyx_L1_error)
+    __PYX_ERR(0, 151, __pyx_L1_error)
 
-    /* "pydensity/backends/cython/_core_cy.pyx":146
+    /* "pydensity/backends/cython/_core_cy.pyx":150
  * 
  * cpdef inline bytes compress(const uint8_t[::1] data, object algorithm):
  *     if not isinstance(algorithm, Algorithm):             # <<<<<<<<<<<<<<
@@ -4684,20 +4684,20 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_co
  */
   }
 
-  /* "pydensity/backends/cython/_core_cy.pyx":148
+  /* "pydensity/backends/cython/_core_cy.pyx":152
  *     if not isinstance(algorithm, Algorithm):
  *         raise ValueError("algorithm should be an instance of Algorithm")
  *     cdef DENSITY_ALGORITHM v = algorithm.value             # <<<<<<<<<<<<<<
  * 
  *     cdef uint_fast64_t text_length = <uint_fast64_t>data.shape[0]
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_algorithm, __pyx_n_s_value); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 148, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_algorithm, __pyx_n_s_value); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 152, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_4 = ((DENSITY_ALGORITHM)__Pyx_PyInt_As_DENSITY_ALGORITHM(__pyx_t_1)); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 148, __pyx_L1_error)
+  __pyx_t_4 = ((DENSITY_ALGORITHM)__Pyx_PyInt_As_DENSITY_ALGORITHM(__pyx_t_1)); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 152, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_v = __pyx_t_4;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":150
+  /* "pydensity/backends/cython/_core_cy.pyx":154
  *     cdef DENSITY_ALGORITHM v = algorithm.value
  * 
  *     cdef uint_fast64_t text_length = <uint_fast64_t>data.shape[0]             # <<<<<<<<<<<<<<
@@ -4706,7 +4706,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_co
  */
   __pyx_v_text_length = ((uint_fast64_t)(__pyx_v_data.shape[0]));
 
-  /* "pydensity/backends/cython/_core_cy.pyx":151
+  /* "pydensity/backends/cython/_core_cy.pyx":155
  * 
  *     cdef uint_fast64_t text_length = <uint_fast64_t>data.shape[0]
  *     cdef uint_fast64_t compress_safe_size = density_compress_safe_size(text_length)             # <<<<<<<<<<<<<<
@@ -4715,19 +4715,19 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_co
  */
   __pyx_v_compress_safe_size = density_compress_safe_size(__pyx_v_text_length);
 
-  /* "pydensity/backends/cython/_core_cy.pyx":152
+  /* "pydensity/backends/cython/_core_cy.pyx":156
  *     cdef uint_fast64_t text_length = <uint_fast64_t>data.shape[0]
  *     cdef uint_fast64_t compress_safe_size = density_compress_safe_size(text_length)
  *     cdef bytes out = PyBytes_FromStringAndSize(NULL, <Py_ssize_t>compress_safe_size)             # <<<<<<<<<<<<<<
  *     if <void*>out == NULL:
  *         raise
  */
-  __pyx_t_1 = PyBytes_FromStringAndSize(NULL, ((Py_ssize_t)__pyx_v_compress_safe_size)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 152, __pyx_L1_error)
+  __pyx_t_1 = PyBytes_FromStringAndSize(NULL, ((Py_ssize_t)__pyx_v_compress_safe_size)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 156, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_out = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":153
+  /* "pydensity/backends/cython/_core_cy.pyx":157
  *     cdef uint_fast64_t compress_safe_size = density_compress_safe_size(text_length)
  *     cdef bytes out = PyBytes_FromStringAndSize(NULL, <Py_ssize_t>compress_safe_size)
  *     if <void*>out == NULL:             # <<<<<<<<<<<<<<
@@ -4737,16 +4737,16 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_co
   __pyx_t_3 = ((((void *)__pyx_v_out) == NULL) != 0);
   if (unlikely(__pyx_t_3)) {
 
-    /* "pydensity/backends/cython/_core_cy.pyx":154
+    /* "pydensity/backends/cython/_core_cy.pyx":158
  *     cdef bytes out = PyBytes_FromStringAndSize(NULL, <Py_ssize_t>compress_safe_size)
  *     if <void*>out == NULL:
  *         raise             # <<<<<<<<<<<<<<
  *     cdef uint8_t* out_ptr = <uint8_t*>PyBytes_AS_STRING(out)
  *     cdef density_processing_result result
  */
-    __Pyx_ReraiseException(); __PYX_ERR(0, 154, __pyx_L1_error)
+    __Pyx_ReraiseException(); __PYX_ERR(0, 158, __pyx_L1_error)
 
-    /* "pydensity/backends/cython/_core_cy.pyx":153
+    /* "pydensity/backends/cython/_core_cy.pyx":157
  *     cdef uint_fast64_t compress_safe_size = density_compress_safe_size(text_length)
  *     cdef bytes out = PyBytes_FromStringAndSize(NULL, <Py_ssize_t>compress_safe_size)
  *     if <void*>out == NULL:             # <<<<<<<<<<<<<<
@@ -4755,7 +4755,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_co
  */
   }
 
-  /* "pydensity/backends/cython/_core_cy.pyx":155
+  /* "pydensity/backends/cython/_core_cy.pyx":159
  *     if <void*>out == NULL:
  *         raise
  *     cdef uint8_t* out_ptr = <uint8_t*>PyBytes_AS_STRING(out)             # <<<<<<<<<<<<<<
@@ -4764,7 +4764,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_co
  */
   __pyx_v_out_ptr = ((uint8_t *)PyBytes_AS_STRING(__pyx_v_out));
 
-  /* "pydensity/backends/cython/_core_cy.pyx":157
+  /* "pydensity/backends/cython/_core_cy.pyx":161
  *     cdef uint8_t* out_ptr = <uint8_t*>PyBytes_AS_STRING(out)
  *     cdef density_processing_result result
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -4779,7 +4779,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_co
       #endif
       /*try:*/ {
 
-        /* "pydensity/backends/cython/_core_cy.pyx":158
+        /* "pydensity/backends/cython/_core_cy.pyx":162
  *     cdef density_processing_result result
  *     with nogil:
  *         result = density_compress(&data[0], text_length, out_ptr, compress_safe_size, v)             # <<<<<<<<<<<<<<
@@ -4790,7 +4790,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_co
         __pyx_v_result = density_compress((&(*((uint8_t const  *) ( /* dim=0 */ ((char *) (((uint8_t const  *) __pyx_v_data.data) + __pyx_t_5)) )))), __pyx_v_text_length, __pyx_v_out_ptr, __pyx_v_compress_safe_size, __pyx_v_v);
       }
 
-      /* "pydensity/backends/cython/_core_cy.pyx":157
+      /* "pydensity/backends/cython/_core_cy.pyx":161
  *     cdef uint8_t* out_ptr = <uint8_t*>PyBytes_AS_STRING(out)
  *     cdef density_processing_result result
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -4809,7 +4809,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_co
       }
   }
 
-  /* "pydensity/backends/cython/_core_cy.pyx":159
+  /* "pydensity/backends/cython/_core_cy.pyx":163
  *     with nogil:
  *         result = density_compress(&data[0], text_length, out_ptr, compress_safe_size, v)
  *     if result.state != DENSITY_STATE_OK:             # <<<<<<<<<<<<<<
@@ -4819,23 +4819,23 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_co
   __pyx_t_3 = ((__pyx_v_result.state != DENSITY_STATE_OK) != 0);
   if (unlikely(__pyx_t_3)) {
 
-    /* "pydensity/backends/cython/_core_cy.pyx":160
+    /* "pydensity/backends/cython/_core_cy.pyx":164
  *         result = density_compress(&data[0], text_length, out_ptr, compress_safe_size, v)
  *     if result.state != DENSITY_STATE_OK:
  *         raise ValueError(format_state(result.state))             # <<<<<<<<<<<<<<
  *     return out[:result.bytesWritten]
  * 
  */
-    __pyx_t_1 = __pyx_f_9pydensity_8backends_6cython_8_core_cy_format_state(__pyx_v_result.state); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 160, __pyx_L1_error)
+    __pyx_t_1 = __pyx_f_9pydensity_8backends_6cython_8_core_cy_format_state(__pyx_v_result.state); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 164, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 160, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 164, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_Raise(__pyx_t_6, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __PYX_ERR(0, 160, __pyx_L1_error)
+    __PYX_ERR(0, 164, __pyx_L1_error)
 
-    /* "pydensity/backends/cython/_core_cy.pyx":159
+    /* "pydensity/backends/cython/_core_cy.pyx":163
  *     with nogil:
  *         result = density_compress(&data[0], text_length, out_ptr, compress_safe_size, v)
  *     if result.state != DENSITY_STATE_OK:             # <<<<<<<<<<<<<<
@@ -4844,7 +4844,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_co
  */
   }
 
-  /* "pydensity/backends/cython/_core_cy.pyx":161
+  /* "pydensity/backends/cython/_core_cy.pyx":165
  *     if result.state != DENSITY_STATE_OK:
  *         raise ValueError(format_state(result.state))
  *     return out[:result.bytesWritten]             # <<<<<<<<<<<<<<
@@ -4854,15 +4854,15 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_co
   __Pyx_XDECREF(__pyx_r);
   if (unlikely(__pyx_v_out == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-    __PYX_ERR(0, 161, __pyx_L1_error)
+    __PYX_ERR(0, 165, __pyx_L1_error)
   }
-  __pyx_t_6 = PySequence_GetSlice(__pyx_v_out, 0, __pyx_v_result.bytesWritten); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 161, __pyx_L1_error)
+  __pyx_t_6 = PySequence_GetSlice(__pyx_v_out, 0, __pyx_v_result.bytesWritten); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 165, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_r = ((PyObject*)__pyx_t_6);
   __pyx_t_6 = 0;
   goto __pyx_L0;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":145
+  /* "pydensity/backends/cython/_core_cy.pyx":149
  * 
  * 
  * cpdef inline bytes compress(const uint8_t[::1] data, object algorithm):             # <<<<<<<<<<<<<<
@@ -4918,11 +4918,11 @@ static PyObject *__pyx_pw_9pydensity_8backends_6cython_8_core_cy_13compress(PyOb
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_algorithm)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("compress", 1, 2, 2, 1); __PYX_ERR(0, 145, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("compress", 1, 2, 2, 1); __PYX_ERR(0, 149, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "compress") < 0)) __PYX_ERR(0, 145, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "compress") < 0)) __PYX_ERR(0, 149, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -4930,12 +4930,12 @@ static PyObject *__pyx_pw_9pydensity_8backends_6cython_8_core_cy_13compress(PyOb
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_data = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t__const__(values[0], 0); if (unlikely(!__pyx_v_data.memview)) __PYX_ERR(0, 145, __pyx_L3_error)
+    __pyx_v_data = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t__const__(values[0], 0); if (unlikely(!__pyx_v_data.memview)) __PYX_ERR(0, 149, __pyx_L3_error)
     __pyx_v_algorithm = values[1];
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("compress", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 145, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("compress", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 149, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pydensity.backends.cython._core_cy.compress", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -4957,8 +4957,8 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_12compress(CYTH
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("compress", 0);
   __Pyx_XDECREF(__pyx_r);
-  if (unlikely(!__pyx_v_data.memview)) { __Pyx_RaiseUnboundLocalError("data"); __PYX_ERR(0, 145, __pyx_L1_error) }
-  __pyx_t_1 = __pyx_f_9pydensity_8backends_6cython_8_core_cy_compress(__pyx_v_data, __pyx_v_algorithm, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 145, __pyx_L1_error)
+  if (unlikely(!__pyx_v_data.memview)) { __Pyx_RaiseUnboundLocalError("data"); __PYX_ERR(0, 149, __pyx_L1_error) }
+  __pyx_t_1 = __pyx_f_9pydensity_8backends_6cython_8_core_cy_compress(__pyx_v_data, __pyx_v_algorithm, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 149, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -4976,10 +4976,10 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_12compress(CYTH
   return __pyx_r;
 }
 
-/* "pydensity/backends/cython/_core_cy.pyx":164
+/* "pydensity/backends/cython/_core_cy.pyx":168
  * 
  * 
- * cpdef inline uint_fast64_t compress_into(const uint8_t[::1] data, uint8_t[::1] out, object algorithm):             # <<<<<<<<<<<<<<
+ * cpdef inline uint_fast64_t compress_into(const uint8_t[::1] data, uint8_t[::1] out, object algorithm) except 0:             # <<<<<<<<<<<<<<
  *     if not isinstance(algorithm, Algorithm):
  *         raise ValueError("algorithm should be an instance of Algorithm")
  */
@@ -5003,56 +5003,56 @@ static CYTHON_INLINE uint_fast64_t __pyx_f_9pydensity_8backends_6cython_8_core_c
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("compress_into", 0);
 
-  /* "pydensity/backends/cython/_core_cy.pyx":165
+  /* "pydensity/backends/cython/_core_cy.pyx":169
  * 
- * cpdef inline uint_fast64_t compress_into(const uint8_t[::1] data, uint8_t[::1] out, object algorithm):
+ * cpdef inline uint_fast64_t compress_into(const uint8_t[::1] data, uint8_t[::1] out, object algorithm) except 0:
  *     if not isinstance(algorithm, Algorithm):             # <<<<<<<<<<<<<<
  *         raise ValueError("algorithm should be an instance of Algorithm")
  *     cdef DENSITY_ALGORITHM v = algorithm.value
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Algorithm); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 165, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Algorithm); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyObject_IsInstance(__pyx_v_algorithm, __pyx_t_1); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 165, __pyx_L1_error)
+  __pyx_t_2 = PyObject_IsInstance(__pyx_v_algorithm, __pyx_t_1); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 169, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = ((!(__pyx_t_2 != 0)) != 0);
   if (unlikely(__pyx_t_3)) {
 
-    /* "pydensity/backends/cython/_core_cy.pyx":166
- * cpdef inline uint_fast64_t compress_into(const uint8_t[::1] data, uint8_t[::1] out, object algorithm):
+    /* "pydensity/backends/cython/_core_cy.pyx":170
+ * cpdef inline uint_fast64_t compress_into(const uint8_t[::1] data, uint8_t[::1] out, object algorithm) except 0:
  *     if not isinstance(algorithm, Algorithm):
  *         raise ValueError("algorithm should be an instance of Algorithm")             # <<<<<<<<<<<<<<
  *     cdef DENSITY_ALGORITHM v = algorithm.value
  *     cdef uint_fast64_t text_length = <uint_fast64_t>data.shape[0]
  */
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 166, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 170, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 166, __pyx_L1_error)
+    __PYX_ERR(0, 170, __pyx_L1_error)
 
-    /* "pydensity/backends/cython/_core_cy.pyx":165
+    /* "pydensity/backends/cython/_core_cy.pyx":169
  * 
- * cpdef inline uint_fast64_t compress_into(const uint8_t[::1] data, uint8_t[::1] out, object algorithm):
+ * cpdef inline uint_fast64_t compress_into(const uint8_t[::1] data, uint8_t[::1] out, object algorithm) except 0:
  *     if not isinstance(algorithm, Algorithm):             # <<<<<<<<<<<<<<
  *         raise ValueError("algorithm should be an instance of Algorithm")
  *     cdef DENSITY_ALGORITHM v = algorithm.value
  */
   }
 
-  /* "pydensity/backends/cython/_core_cy.pyx":167
+  /* "pydensity/backends/cython/_core_cy.pyx":171
  *     if not isinstance(algorithm, Algorithm):
  *         raise ValueError("algorithm should be an instance of Algorithm")
  *     cdef DENSITY_ALGORITHM v = algorithm.value             # <<<<<<<<<<<<<<
  *     cdef uint_fast64_t text_length = <uint_fast64_t>data.shape[0]
  *     cdef density_processing_result result
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_algorithm, __pyx_n_s_value); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 167, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_algorithm, __pyx_n_s_value); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_4 = ((DENSITY_ALGORITHM)__Pyx_PyInt_As_DENSITY_ALGORITHM(__pyx_t_1)); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 167, __pyx_L1_error)
+  __pyx_t_4 = ((DENSITY_ALGORITHM)__Pyx_PyInt_As_DENSITY_ALGORITHM(__pyx_t_1)); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_v = __pyx_t_4;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":168
+  /* "pydensity/backends/cython/_core_cy.pyx":172
  *         raise ValueError("algorithm should be an instance of Algorithm")
  *     cdef DENSITY_ALGORITHM v = algorithm.value
  *     cdef uint_fast64_t text_length = <uint_fast64_t>data.shape[0]             # <<<<<<<<<<<<<<
@@ -5061,7 +5061,7 @@ static CYTHON_INLINE uint_fast64_t __pyx_f_9pydensity_8backends_6cython_8_core_c
  */
   __pyx_v_text_length = ((uint_fast64_t)(__pyx_v_data.shape[0]));
 
-  /* "pydensity/backends/cython/_core_cy.pyx":170
+  /* "pydensity/backends/cython/_core_cy.pyx":174
  *     cdef uint_fast64_t text_length = <uint_fast64_t>data.shape[0]
  *     cdef density_processing_result result
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -5076,7 +5076,7 @@ static CYTHON_INLINE uint_fast64_t __pyx_f_9pydensity_8backends_6cython_8_core_c
       #endif
       /*try:*/ {
 
-        /* "pydensity/backends/cython/_core_cy.pyx":171
+        /* "pydensity/backends/cython/_core_cy.pyx":175
  *     cdef density_processing_result result
  *     with nogil:
  *         result = density_compress(&data[0], text_length, &out[0], <uint_fast64_t>out.shape[0], v)             # <<<<<<<<<<<<<<
@@ -5088,7 +5088,7 @@ static CYTHON_INLINE uint_fast64_t __pyx_f_9pydensity_8backends_6cython_8_core_c
         __pyx_v_result = density_compress((&(*((uint8_t const  *) ( /* dim=0 */ ((char *) (((uint8_t const  *) __pyx_v_data.data) + __pyx_t_5)) )))), __pyx_v_text_length, (&(*((uint8_t *) ( /* dim=0 */ ((char *) (((uint8_t *) __pyx_v_out.data) + __pyx_t_6)) )))), ((uint_fast64_t)(__pyx_v_out.shape[0])), __pyx_v_v);
       }
 
-      /* "pydensity/backends/cython/_core_cy.pyx":170
+      /* "pydensity/backends/cython/_core_cy.pyx":174
  *     cdef uint_fast64_t text_length = <uint_fast64_t>data.shape[0]
  *     cdef density_processing_result result
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -5107,7 +5107,7 @@ static CYTHON_INLINE uint_fast64_t __pyx_f_9pydensity_8backends_6cython_8_core_c
       }
   }
 
-  /* "pydensity/backends/cython/_core_cy.pyx":172
+  /* "pydensity/backends/cython/_core_cy.pyx":176
  *     with nogil:
  *         result = density_compress(&data[0], text_length, &out[0], <uint_fast64_t>out.shape[0], v)
  *     if result.state != DENSITY_STATE_OK:             # <<<<<<<<<<<<<<
@@ -5117,23 +5117,23 @@ static CYTHON_INLINE uint_fast64_t __pyx_f_9pydensity_8backends_6cython_8_core_c
   __pyx_t_3 = ((__pyx_v_result.state != DENSITY_STATE_OK) != 0);
   if (unlikely(__pyx_t_3)) {
 
-    /* "pydensity/backends/cython/_core_cy.pyx":173
+    /* "pydensity/backends/cython/_core_cy.pyx":177
  *         result = density_compress(&data[0], text_length, &out[0], <uint_fast64_t>out.shape[0], v)
  *     if result.state != DENSITY_STATE_OK:
  *         raise ValueError(format_state(result.state))             # <<<<<<<<<<<<<<
  *     return result.bytesWritten
  * 
  */
-    __pyx_t_1 = __pyx_f_9pydensity_8backends_6cython_8_core_cy_format_state(__pyx_v_result.state); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 173, __pyx_L1_error)
+    __pyx_t_1 = __pyx_f_9pydensity_8backends_6cython_8_core_cy_format_state(__pyx_v_result.state); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 177, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_7 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 173, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 177, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_Raise(__pyx_t_7, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    __PYX_ERR(0, 173, __pyx_L1_error)
+    __PYX_ERR(0, 177, __pyx_L1_error)
 
-    /* "pydensity/backends/cython/_core_cy.pyx":172
+    /* "pydensity/backends/cython/_core_cy.pyx":176
  *     with nogil:
  *         result = density_compress(&data[0], text_length, &out[0], <uint_fast64_t>out.shape[0], v)
  *     if result.state != DENSITY_STATE_OK:             # <<<<<<<<<<<<<<
@@ -5142,7 +5142,7 @@ static CYTHON_INLINE uint_fast64_t __pyx_f_9pydensity_8backends_6cython_8_core_c
  */
   }
 
-  /* "pydensity/backends/cython/_core_cy.pyx":174
+  /* "pydensity/backends/cython/_core_cy.pyx":178
  *     if result.state != DENSITY_STATE_OK:
  *         raise ValueError(format_state(result.state))
  *     return result.bytesWritten             # <<<<<<<<<<<<<<
@@ -5152,10 +5152,10 @@ static CYTHON_INLINE uint_fast64_t __pyx_f_9pydensity_8backends_6cython_8_core_c
   __pyx_r = __pyx_v_result.bytesWritten;
   goto __pyx_L0;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":164
+  /* "pydensity/backends/cython/_core_cy.pyx":168
  * 
  * 
- * cpdef inline uint_fast64_t compress_into(const uint8_t[::1] data, uint8_t[::1] out, object algorithm):             # <<<<<<<<<<<<<<
+ * cpdef inline uint_fast64_t compress_into(const uint8_t[::1] data, uint8_t[::1] out, object algorithm) except 0:             # <<<<<<<<<<<<<<
  *     if not isinstance(algorithm, Algorithm):
  *         raise ValueError("algorithm should be an instance of Algorithm")
  */
@@ -5164,7 +5164,7 @@ static CYTHON_INLINE uint_fast64_t __pyx_f_9pydensity_8backends_6cython_8_core_c
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_7);
-  __Pyx_WriteUnraisable("pydensity.backends.cython._core_cy.compress_into", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 0);
+  __Pyx_AddTraceback("pydensity.backends.cython._core_cy.compress_into", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -5209,17 +5209,17 @@ static PyObject *__pyx_pw_9pydensity_8backends_6cython_8_core_cy_15compress_into
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_out)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("compress_into", 1, 3, 3, 1); __PYX_ERR(0, 164, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("compress_into", 1, 3, 3, 1); __PYX_ERR(0, 168, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_algorithm)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("compress_into", 1, 3, 3, 2); __PYX_ERR(0, 164, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("compress_into", 1, 3, 3, 2); __PYX_ERR(0, 168, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "compress_into") < 0)) __PYX_ERR(0, 164, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "compress_into") < 0)) __PYX_ERR(0, 168, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -5228,13 +5228,13 @@ static PyObject *__pyx_pw_9pydensity_8backends_6cython_8_core_cy_15compress_into
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
     }
-    __pyx_v_data = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t__const__(values[0], 0); if (unlikely(!__pyx_v_data.memview)) __PYX_ERR(0, 164, __pyx_L3_error)
-    __pyx_v_out = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_out.memview)) __PYX_ERR(0, 164, __pyx_L3_error)
+    __pyx_v_data = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t__const__(values[0], 0); if (unlikely(!__pyx_v_data.memview)) __PYX_ERR(0, 168, __pyx_L3_error)
+    __pyx_v_out = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_out.memview)) __PYX_ERR(0, 168, __pyx_L3_error)
     __pyx_v_algorithm = values[2];
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("compress_into", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 164, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("compress_into", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 168, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pydensity.backends.cython._core_cy.compress_into", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -5250,23 +5250,25 @@ static PyObject *__pyx_pw_9pydensity_8backends_6cython_8_core_cy_15compress_into
 static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_14compress_into(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_data, __Pyx_memviewslice __pyx_v_out, PyObject *__pyx_v_algorithm) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
-  PyObject *__pyx_t_1 = NULL;
+  uint_fast64_t __pyx_t_1;
+  PyObject *__pyx_t_2 = NULL;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("compress_into", 0);
   __Pyx_XDECREF(__pyx_r);
-  if (unlikely(!__pyx_v_data.memview)) { __Pyx_RaiseUnboundLocalError("data"); __PYX_ERR(0, 164, __pyx_L1_error) }
-  if (unlikely(!__pyx_v_out.memview)) { __Pyx_RaiseUnboundLocalError("out"); __PYX_ERR(0, 164, __pyx_L1_error) }
-  __pyx_t_1 = __Pyx_PyInt_From_uint_fast64_t(__pyx_f_9pydensity_8backends_6cython_8_core_cy_compress_into(__pyx_v_data, __pyx_v_out, __pyx_v_algorithm, 0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 164, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_r = __pyx_t_1;
-  __pyx_t_1 = 0;
+  if (unlikely(!__pyx_v_data.memview)) { __Pyx_RaiseUnboundLocalError("data"); __PYX_ERR(0, 168, __pyx_L1_error) }
+  if (unlikely(!__pyx_v_out.memview)) { __Pyx_RaiseUnboundLocalError("out"); __PYX_ERR(0, 168, __pyx_L1_error) }
+  __pyx_t_1 = __pyx_f_9pydensity_8backends_6cython_8_core_cy_compress_into(__pyx_v_data, __pyx_v_out, __pyx_v_algorithm, 0); if (unlikely(__pyx_t_1 == ((uint_fast64_t)0))) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_uint_fast64_t(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_r = __pyx_t_2;
+  __pyx_t_2 = 0;
   goto __pyx_L0;
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_XDECREF(__pyx_t_1);
+  __Pyx_XDECREF(__pyx_t_2);
   __Pyx_AddTraceback("pydensity.backends.cython._core_cy.compress_into", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
@@ -5277,7 +5279,7 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_14compress_into
   return __pyx_r;
 }
 
-/* "pydensity/backends/cython/_core_cy.pyx":177
+/* "pydensity/backends/cython/_core_cy.pyx":181
  * 
  * 
  * cpdef inline bytes decompress(const uint8_t[::1] data, uint_fast64_t decompress_safe_size):             # <<<<<<<<<<<<<<
@@ -5302,7 +5304,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_de
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("decompress", 0);
 
-  /* "pydensity/backends/cython/_core_cy.pyx":178
+  /* "pydensity/backends/cython/_core_cy.pyx":182
  * 
  * cpdef inline bytes decompress(const uint8_t[::1] data, uint_fast64_t decompress_safe_size):
  *     cdef uint_fast64_t text_length = <uint_fast64_t> data.shape[0]             # <<<<<<<<<<<<<<
@@ -5311,19 +5313,19 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_de
  */
   __pyx_v_text_length = ((uint_fast64_t)(__pyx_v_data.shape[0]));
 
-  /* "pydensity/backends/cython/_core_cy.pyx":179
+  /* "pydensity/backends/cython/_core_cy.pyx":183
  * cpdef inline bytes decompress(const uint8_t[::1] data, uint_fast64_t decompress_safe_size):
  *     cdef uint_fast64_t text_length = <uint_fast64_t> data.shape[0]
  *     cdef bytes out = PyBytes_FromStringAndSize(NULL, <Py_ssize_t> decompress_safe_size)             # <<<<<<<<<<<<<<
  *     if <void *> out == NULL:
  *         raise
  */
-  __pyx_t_1 = PyBytes_FromStringAndSize(NULL, ((Py_ssize_t)__pyx_v_decompress_safe_size)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 179, __pyx_L1_error)
+  __pyx_t_1 = PyBytes_FromStringAndSize(NULL, ((Py_ssize_t)__pyx_v_decompress_safe_size)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_out = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":180
+  /* "pydensity/backends/cython/_core_cy.pyx":184
  *     cdef uint_fast64_t text_length = <uint_fast64_t> data.shape[0]
  *     cdef bytes out = PyBytes_FromStringAndSize(NULL, <Py_ssize_t> decompress_safe_size)
  *     if <void *> out == NULL:             # <<<<<<<<<<<<<<
@@ -5333,16 +5335,16 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_de
   __pyx_t_2 = ((((void *)__pyx_v_out) == NULL) != 0);
   if (unlikely(__pyx_t_2)) {
 
-    /* "pydensity/backends/cython/_core_cy.pyx":181
+    /* "pydensity/backends/cython/_core_cy.pyx":185
  *     cdef bytes out = PyBytes_FromStringAndSize(NULL, <Py_ssize_t> decompress_safe_size)
  *     if <void *> out == NULL:
  *         raise             # <<<<<<<<<<<<<<
  *     cdef uint8_t * out_ptr = <uint8_t *> PyBytes_AS_STRING(out)
  *     cdef density_processing_result result
  */
-    __Pyx_ReraiseException(); __PYX_ERR(0, 181, __pyx_L1_error)
+    __Pyx_ReraiseException(); __PYX_ERR(0, 185, __pyx_L1_error)
 
-    /* "pydensity/backends/cython/_core_cy.pyx":180
+    /* "pydensity/backends/cython/_core_cy.pyx":184
  *     cdef uint_fast64_t text_length = <uint_fast64_t> data.shape[0]
  *     cdef bytes out = PyBytes_FromStringAndSize(NULL, <Py_ssize_t> decompress_safe_size)
  *     if <void *> out == NULL:             # <<<<<<<<<<<<<<
@@ -5351,7 +5353,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_de
  */
   }
 
-  /* "pydensity/backends/cython/_core_cy.pyx":182
+  /* "pydensity/backends/cython/_core_cy.pyx":186
  *     if <void *> out == NULL:
  *         raise
  *     cdef uint8_t * out_ptr = <uint8_t *> PyBytes_AS_STRING(out)             # <<<<<<<<<<<<<<
@@ -5360,7 +5362,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_de
  */
   __pyx_v_out_ptr = ((uint8_t *)PyBytes_AS_STRING(__pyx_v_out));
 
-  /* "pydensity/backends/cython/_core_cy.pyx":184
+  /* "pydensity/backends/cython/_core_cy.pyx":188
  *     cdef uint8_t * out_ptr = <uint8_t *> PyBytes_AS_STRING(out)
  *     cdef density_processing_result result
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -5375,7 +5377,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_de
       #endif
       /*try:*/ {
 
-        /* "pydensity/backends/cython/_core_cy.pyx":185
+        /* "pydensity/backends/cython/_core_cy.pyx":189
  *     cdef density_processing_result result
  *     with nogil:
  *         result = density_decompress(&data[0], text_length, out_ptr, decompress_safe_size)             # <<<<<<<<<<<<<<
@@ -5386,7 +5388,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_de
         __pyx_v_result = density_decompress((&(*((uint8_t const  *) ( /* dim=0 */ ((char *) (((uint8_t const  *) __pyx_v_data.data) + __pyx_t_3)) )))), __pyx_v_text_length, __pyx_v_out_ptr, __pyx_v_decompress_safe_size);
       }
 
-      /* "pydensity/backends/cython/_core_cy.pyx":184
+      /* "pydensity/backends/cython/_core_cy.pyx":188
  *     cdef uint8_t * out_ptr = <uint8_t *> PyBytes_AS_STRING(out)
  *     cdef density_processing_result result
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -5405,7 +5407,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_de
       }
   }
 
-  /* "pydensity/backends/cython/_core_cy.pyx":186
+  /* "pydensity/backends/cython/_core_cy.pyx":190
  *     with nogil:
  *         result = density_decompress(&data[0], text_length, out_ptr, decompress_safe_size)
  *     if result.state != DENSITY_STATE_OK:             # <<<<<<<<<<<<<<
@@ -5415,23 +5417,23 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_de
   __pyx_t_2 = ((__pyx_v_result.state != DENSITY_STATE_OK) != 0);
   if (unlikely(__pyx_t_2)) {
 
-    /* "pydensity/backends/cython/_core_cy.pyx":187
+    /* "pydensity/backends/cython/_core_cy.pyx":191
  *         result = density_decompress(&data[0], text_length, out_ptr, decompress_safe_size)
  *     if result.state != DENSITY_STATE_OK:
  *         raise ValueError(format_state(result.state))             # <<<<<<<<<<<<<<
  *     return out[:result.bytesWritten]
  * 
  */
-    __pyx_t_1 = __pyx_f_9pydensity_8backends_6cython_8_core_cy_format_state(__pyx_v_result.state); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 187, __pyx_L1_error)
+    __pyx_t_1 = __pyx_f_9pydensity_8backends_6cython_8_core_cy_format_state(__pyx_v_result.state); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 191, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 187, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 191, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_Raise(__pyx_t_4, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __PYX_ERR(0, 187, __pyx_L1_error)
+    __PYX_ERR(0, 191, __pyx_L1_error)
 
-    /* "pydensity/backends/cython/_core_cy.pyx":186
+    /* "pydensity/backends/cython/_core_cy.pyx":190
  *     with nogil:
  *         result = density_decompress(&data[0], text_length, out_ptr, decompress_safe_size)
  *     if result.state != DENSITY_STATE_OK:             # <<<<<<<<<<<<<<
@@ -5440,7 +5442,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_de
  */
   }
 
-  /* "pydensity/backends/cython/_core_cy.pyx":188
+  /* "pydensity/backends/cython/_core_cy.pyx":192
  *     if result.state != DENSITY_STATE_OK:
  *         raise ValueError(format_state(result.state))
  *     return out[:result.bytesWritten]             # <<<<<<<<<<<<<<
@@ -5450,15 +5452,15 @@ static CYTHON_INLINE PyObject *__pyx_f_9pydensity_8backends_6cython_8_core_cy_de
   __Pyx_XDECREF(__pyx_r);
   if (unlikely(__pyx_v_out == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-    __PYX_ERR(0, 188, __pyx_L1_error)
+    __PYX_ERR(0, 192, __pyx_L1_error)
   }
-  __pyx_t_4 = PySequence_GetSlice(__pyx_v_out, 0, __pyx_v_result.bytesWritten); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 188, __pyx_L1_error)
+  __pyx_t_4 = PySequence_GetSlice(__pyx_v_out, 0, __pyx_v_result.bytesWritten); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 192, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_r = ((PyObject*)__pyx_t_4);
   __pyx_t_4 = 0;
   goto __pyx_L0;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":177
+  /* "pydensity/backends/cython/_core_cy.pyx":181
  * 
  * 
  * cpdef inline bytes decompress(const uint8_t[::1] data, uint_fast64_t decompress_safe_size):             # <<<<<<<<<<<<<<
@@ -5514,11 +5516,11 @@ static PyObject *__pyx_pw_9pydensity_8backends_6cython_8_core_cy_17decompress(Py
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_decompress_safe_size)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("decompress", 1, 2, 2, 1); __PYX_ERR(0, 177, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("decompress", 1, 2, 2, 1); __PYX_ERR(0, 181, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "decompress") < 0)) __PYX_ERR(0, 177, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "decompress") < 0)) __PYX_ERR(0, 181, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -5526,12 +5528,12 @@ static PyObject *__pyx_pw_9pydensity_8backends_6cython_8_core_cy_17decompress(Py
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_data = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t__const__(values[0], 0); if (unlikely(!__pyx_v_data.memview)) __PYX_ERR(0, 177, __pyx_L3_error)
-    __pyx_v_decompress_safe_size = __Pyx_PyInt_As_uint_fast64_t(values[1]); if (unlikely((__pyx_v_decompress_safe_size == ((uint_fast64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 177, __pyx_L3_error)
+    __pyx_v_data = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t__const__(values[0], 0); if (unlikely(!__pyx_v_data.memview)) __PYX_ERR(0, 181, __pyx_L3_error)
+    __pyx_v_decompress_safe_size = __Pyx_PyInt_As_uint_fast64_t(values[1]); if (unlikely((__pyx_v_decompress_safe_size == ((uint_fast64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 181, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("decompress", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 177, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("decompress", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 181, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pydensity.backends.cython._core_cy.decompress", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -5553,8 +5555,8 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_16decompress(CY
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("decompress", 0);
   __Pyx_XDECREF(__pyx_r);
-  if (unlikely(!__pyx_v_data.memview)) { __Pyx_RaiseUnboundLocalError("data"); __PYX_ERR(0, 177, __pyx_L1_error) }
-  __pyx_t_1 = __pyx_f_9pydensity_8backends_6cython_8_core_cy_decompress(__pyx_v_data, __pyx_v_decompress_safe_size, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 177, __pyx_L1_error)
+  if (unlikely(!__pyx_v_data.memview)) { __Pyx_RaiseUnboundLocalError("data"); __PYX_ERR(0, 181, __pyx_L1_error) }
+  __pyx_t_1 = __pyx_f_9pydensity_8backends_6cython_8_core_cy_decompress(__pyx_v_data, __pyx_v_decompress_safe_size, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 181, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -5572,10 +5574,10 @@ static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_16decompress(CY
   return __pyx_r;
 }
 
-/* "pydensity/backends/cython/_core_cy.pyx":191
+/* "pydensity/backends/cython/_core_cy.pyx":195
  * 
  * 
- * cpdef inline uint_fast64_t decompress_into(const uint8_t[::1] data, uint8_t[::1] out):             # <<<<<<<<<<<<<<
+ * cpdef inline uint_fast64_t decompress_into(const uint8_t[::1] data, uint8_t[::1] out) except 0:             # <<<<<<<<<<<<<<
  *     cdef uint_fast64_t text_length = <uint_fast64_t> data.shape[0]
  *     cdef density_processing_result result
  */
@@ -5596,16 +5598,16 @@ static CYTHON_INLINE uint_fast64_t __pyx_f_9pydensity_8backends_6cython_8_core_c
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("decompress_into", 0);
 
-  /* "pydensity/backends/cython/_core_cy.pyx":192
+  /* "pydensity/backends/cython/_core_cy.pyx":196
  * 
- * cpdef inline uint_fast64_t decompress_into(const uint8_t[::1] data, uint8_t[::1] out):
+ * cpdef inline uint_fast64_t decompress_into(const uint8_t[::1] data, uint8_t[::1] out) except 0:
  *     cdef uint_fast64_t text_length = <uint_fast64_t> data.shape[0]             # <<<<<<<<<<<<<<
  *     cdef density_processing_result result
  *     with nogil:
  */
   __pyx_v_text_length = ((uint_fast64_t)(__pyx_v_data.shape[0]));
 
-  /* "pydensity/backends/cython/_core_cy.pyx":194
+  /* "pydensity/backends/cython/_core_cy.pyx":198
  *     cdef uint_fast64_t text_length = <uint_fast64_t> data.shape[0]
  *     cdef density_processing_result result
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -5620,7 +5622,7 @@ static CYTHON_INLINE uint_fast64_t __pyx_f_9pydensity_8backends_6cython_8_core_c
       #endif
       /*try:*/ {
 
-        /* "pydensity/backends/cython/_core_cy.pyx":195
+        /* "pydensity/backends/cython/_core_cy.pyx":199
  *     cdef density_processing_result result
  *     with nogil:
  *         result = density_decompress(&data[0], text_length, &out[0], <uint_fast64_t>out.shape[0])             # <<<<<<<<<<<<<<
@@ -5632,7 +5634,7 @@ static CYTHON_INLINE uint_fast64_t __pyx_f_9pydensity_8backends_6cython_8_core_c
         __pyx_v_result = density_decompress((&(*((uint8_t const  *) ( /* dim=0 */ ((char *) (((uint8_t const  *) __pyx_v_data.data) + __pyx_t_1)) )))), __pyx_v_text_length, (&(*((uint8_t *) ( /* dim=0 */ ((char *) (((uint8_t *) __pyx_v_out.data) + __pyx_t_2)) )))), ((uint_fast64_t)(__pyx_v_out.shape[0])));
       }
 
-      /* "pydensity/backends/cython/_core_cy.pyx":194
+      /* "pydensity/backends/cython/_core_cy.pyx":198
  *     cdef uint_fast64_t text_length = <uint_fast64_t> data.shape[0]
  *     cdef density_processing_result result
  *     with nogil:             # <<<<<<<<<<<<<<
@@ -5651,7 +5653,7 @@ static CYTHON_INLINE uint_fast64_t __pyx_f_9pydensity_8backends_6cython_8_core_c
       }
   }
 
-  /* "pydensity/backends/cython/_core_cy.pyx":196
+  /* "pydensity/backends/cython/_core_cy.pyx":200
  *     with nogil:
  *         result = density_decompress(&data[0], text_length, &out[0], <uint_fast64_t>out.shape[0])
  *     if result.state != DENSITY_STATE_OK:             # <<<<<<<<<<<<<<
@@ -5661,22 +5663,22 @@ static CYTHON_INLINE uint_fast64_t __pyx_f_9pydensity_8backends_6cython_8_core_c
   __pyx_t_3 = ((__pyx_v_result.state != DENSITY_STATE_OK) != 0);
   if (unlikely(__pyx_t_3)) {
 
-    /* "pydensity/backends/cython/_core_cy.pyx":197
+    /* "pydensity/backends/cython/_core_cy.pyx":201
  *         result = density_decompress(&data[0], text_length, &out[0], <uint_fast64_t>out.shape[0])
  *     if result.state != DENSITY_STATE_OK:
  *         raise ValueError(format_state(result.state))             # <<<<<<<<<<<<<<
  *     return result.bytesWritten
  */
-    __pyx_t_4 = __pyx_f_9pydensity_8backends_6cython_8_core_cy_format_state(__pyx_v_result.state); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 197, __pyx_L1_error)
+    __pyx_t_4 = __pyx_f_9pydensity_8backends_6cython_8_core_cy_format_state(__pyx_v_result.state); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 201, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 197, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 201, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_Raise(__pyx_t_5, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __PYX_ERR(0, 197, __pyx_L1_error)
+    __PYX_ERR(0, 201, __pyx_L1_error)
 
-    /* "pydensity/backends/cython/_core_cy.pyx":196
+    /* "pydensity/backends/cython/_core_cy.pyx":200
  *     with nogil:
  *         result = density_decompress(&data[0], text_length, &out[0], <uint_fast64_t>out.shape[0])
  *     if result.state != DENSITY_STATE_OK:             # <<<<<<<<<<<<<<
@@ -5685,7 +5687,7 @@ static CYTHON_INLINE uint_fast64_t __pyx_f_9pydensity_8backends_6cython_8_core_c
  */
   }
 
-  /* "pydensity/backends/cython/_core_cy.pyx":198
+  /* "pydensity/backends/cython/_core_cy.pyx":202
  *     if result.state != DENSITY_STATE_OK:
  *         raise ValueError(format_state(result.state))
  *     return result.bytesWritten             # <<<<<<<<<<<<<<
@@ -5693,10 +5695,10 @@ static CYTHON_INLINE uint_fast64_t __pyx_f_9pydensity_8backends_6cython_8_core_c
   __pyx_r = __pyx_v_result.bytesWritten;
   goto __pyx_L0;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":191
+  /* "pydensity/backends/cython/_core_cy.pyx":195
  * 
  * 
- * cpdef inline uint_fast64_t decompress_into(const uint8_t[::1] data, uint8_t[::1] out):             # <<<<<<<<<<<<<<
+ * cpdef inline uint_fast64_t decompress_into(const uint8_t[::1] data, uint8_t[::1] out) except 0:             # <<<<<<<<<<<<<<
  *     cdef uint_fast64_t text_length = <uint_fast64_t> data.shape[0]
  *     cdef density_processing_result result
  */
@@ -5705,7 +5707,7 @@ static CYTHON_INLINE uint_fast64_t __pyx_f_9pydensity_8backends_6cython_8_core_c
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_WriteUnraisable("pydensity.backends.cython._core_cy.decompress_into", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 0);
+  __Pyx_AddTraceback("pydensity.backends.cython._core_cy.decompress_into", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -5747,11 +5749,11 @@ static PyObject *__pyx_pw_9pydensity_8backends_6cython_8_core_cy_19decompress_in
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_out)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("decompress_into", 1, 2, 2, 1); __PYX_ERR(0, 191, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("decompress_into", 1, 2, 2, 1); __PYX_ERR(0, 195, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "decompress_into") < 0)) __PYX_ERR(0, 191, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "decompress_into") < 0)) __PYX_ERR(0, 195, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -5759,12 +5761,12 @@ static PyObject *__pyx_pw_9pydensity_8backends_6cython_8_core_cy_19decompress_in
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_data = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t__const__(values[0], 0); if (unlikely(!__pyx_v_data.memview)) __PYX_ERR(0, 191, __pyx_L3_error)
-    __pyx_v_out = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_out.memview)) __PYX_ERR(0, 191, __pyx_L3_error)
+    __pyx_v_data = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t__const__(values[0], 0); if (unlikely(!__pyx_v_data.memview)) __PYX_ERR(0, 195, __pyx_L3_error)
+    __pyx_v_out = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_uint8_t(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_out.memview)) __PYX_ERR(0, 195, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("decompress_into", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 191, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("decompress_into", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 195, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pydensity.backends.cython._core_cy.decompress_into", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -5780,23 +5782,25 @@ static PyObject *__pyx_pw_9pydensity_8backends_6cython_8_core_cy_19decompress_in
 static PyObject *__pyx_pf_9pydensity_8backends_6cython_8_core_cy_18decompress_into(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_data, __Pyx_memviewslice __pyx_v_out) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
-  PyObject *__pyx_t_1 = NULL;
+  uint_fast64_t __pyx_t_1;
+  PyObject *__pyx_t_2 = NULL;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("decompress_into", 0);
   __Pyx_XDECREF(__pyx_r);
-  if (unlikely(!__pyx_v_data.memview)) { __Pyx_RaiseUnboundLocalError("data"); __PYX_ERR(0, 191, __pyx_L1_error) }
-  if (unlikely(!__pyx_v_out.memview)) { __Pyx_RaiseUnboundLocalError("out"); __PYX_ERR(0, 191, __pyx_L1_error) }
-  __pyx_t_1 = __Pyx_PyInt_From_uint_fast64_t(__pyx_f_9pydensity_8backends_6cython_8_core_cy_decompress_into(__pyx_v_data, __pyx_v_out, 0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 191, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_r = __pyx_t_1;
-  __pyx_t_1 = 0;
+  if (unlikely(!__pyx_v_data.memview)) { __Pyx_RaiseUnboundLocalError("data"); __PYX_ERR(0, 195, __pyx_L1_error) }
+  if (unlikely(!__pyx_v_out.memview)) { __Pyx_RaiseUnboundLocalError("out"); __PYX_ERR(0, 195, __pyx_L1_error) }
+  __pyx_t_1 = __pyx_f_9pydensity_8backends_6cython_8_core_cy_decompress_into(__pyx_v_data, __pyx_v_out, 0); if (unlikely(__pyx_t_1 == ((uint_fast64_t)0))) __PYX_ERR(0, 195, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_uint_fast64_t(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 195, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_r = __pyx_t_2;
+  __pyx_t_2 = 0;
   goto __pyx_L0;
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_XDECREF(__pyx_t_1);
+  __Pyx_XDECREF(__pyx_t_2);
   __Pyx_AddTraceback("pydensity.backends.cython._core_cy.decompress_into", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
@@ -19984,7 +19988,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {0, 0, 0, 0, 0, 0, 0}
 };
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(0, 52, __pyx_L1_error)
+  __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(0, 56, __pyx_L1_error)
   __pyx_builtin_TypeError = __Pyx_GetBuiltinName(__pyx_n_s_TypeError); if (!__pyx_builtin_TypeError) __PYX_ERR(1, 2, __pyx_L1_error)
   __pyx_builtin_MemoryError = __Pyx_GetBuiltinName(__pyx_n_s_MemoryError); if (!__pyx_builtin_MemoryError) __PYX_ERR(1, 148, __pyx_L1_error)
   __pyx_builtin_enumerate = __Pyx_GetBuiltinName(__pyx_n_s_enumerate); if (!__pyx_builtin_enumerate) __PYX_ERR(1, 151, __pyx_L1_error)
@@ -20001,14 +20005,14 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "pydensity/backends/cython/_core_cy.pyx":52
+  /* "pydensity/backends/cython/_core_cy.pyx":56
  * cpdef inline size_t get_dictionary_size(object algorithm):
  *     if not isinstance(algorithm, Algorithm):
  *         raise ValueError("algorithm should be an instance of Algorithm")             # <<<<<<<<<<<<<<
  *     cdef DENSITY_ALGORITHM v = algorithm.value
  *     with nogil:
  */
-  __pyx_tuple__2 = PyTuple_Pack(1, __pyx_kp_u_algorithm_should_be_an_instance); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 52, __pyx_L1_error)
+  __pyx_tuple__2 = PyTuple_Pack(1, __pyx_kp_u_algorithm_should_be_an_instance); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
 
@@ -20375,29 +20379,29 @@ static int __Pyx_modinit_type_init_code(void) {
   /*--- Type init code ---*/
   __pyx_vtabptr_9pydensity_8backends_6cython_8_core_cy_Compressor = &__pyx_vtable_9pydensity_8backends_6cython_8_core_cy_Compressor;
   __pyx_vtable_9pydensity_8backends_6cython_8_core_cy_Compressor.compress = (PyObject *(*)(struct __pyx_obj_9pydensity_8backends_6cython_8_core_cy_Compressor *, __Pyx_memviewslice, int __pyx_skip_dispatch))__pyx_f_9pydensity_8backends_6cython_8_core_cy_10Compressor_compress;
-  if (PyType_Ready(&__pyx_type_9pydensity_8backends_6cython_8_core_cy_Compressor) < 0) __PYX_ERR(0, 74, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_9pydensity_8backends_6cython_8_core_cy_Compressor) < 0) __PYX_ERR(0, 78, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_9pydensity_8backends_6cython_8_core_cy_Compressor.tp_print = 0;
   #endif
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_9pydensity_8backends_6cython_8_core_cy_Compressor.tp_dictoffset && __pyx_type_9pydensity_8backends_6cython_8_core_cy_Compressor.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_9pydensity_8backends_6cython_8_core_cy_Compressor.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
-  if (__Pyx_SetVtable(__pyx_type_9pydensity_8backends_6cython_8_core_cy_Compressor.tp_dict, __pyx_vtabptr_9pydensity_8backends_6cython_8_core_cy_Compressor) < 0) __PYX_ERR(0, 74, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_Compressor, (PyObject *)&__pyx_type_9pydensity_8backends_6cython_8_core_cy_Compressor) < 0) __PYX_ERR(0, 74, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_9pydensity_8backends_6cython_8_core_cy_Compressor) < 0) __PYX_ERR(0, 74, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_9pydensity_8backends_6cython_8_core_cy_Compressor.tp_dict, __pyx_vtabptr_9pydensity_8backends_6cython_8_core_cy_Compressor) < 0) __PYX_ERR(0, 78, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_Compressor, (PyObject *)&__pyx_type_9pydensity_8backends_6cython_8_core_cy_Compressor) < 0) __PYX_ERR(0, 78, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_9pydensity_8backends_6cython_8_core_cy_Compressor) < 0) __PYX_ERR(0, 78, __pyx_L1_error)
   __pyx_ptype_9pydensity_8backends_6cython_8_core_cy_Compressor = &__pyx_type_9pydensity_8backends_6cython_8_core_cy_Compressor;
   __pyx_vtabptr_9pydensity_8backends_6cython_8_core_cy_DeCompressor = &__pyx_vtable_9pydensity_8backends_6cython_8_core_cy_DeCompressor;
   __pyx_vtable_9pydensity_8backends_6cython_8_core_cy_DeCompressor.decompress = (PyObject *(*)(struct __pyx_obj_9pydensity_8backends_6cython_8_core_cy_DeCompressor *, __Pyx_memviewslice, uint_fast64_t, int __pyx_skip_dispatch))__pyx_f_9pydensity_8backends_6cython_8_core_cy_12DeCompressor_decompress;
-  if (PyType_Ready(&__pyx_type_9pydensity_8backends_6cython_8_core_cy_DeCompressor) < 0) __PYX_ERR(0, 112, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_9pydensity_8backends_6cython_8_core_cy_DeCompressor) < 0) __PYX_ERR(0, 116, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_9pydensity_8backends_6cython_8_core_cy_DeCompressor.tp_print = 0;
   #endif
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_9pydensity_8backends_6cython_8_core_cy_DeCompressor.tp_dictoffset && __pyx_type_9pydensity_8backends_6cython_8_core_cy_DeCompressor.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_9pydensity_8backends_6cython_8_core_cy_DeCompressor.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
-  if (__Pyx_SetVtable(__pyx_type_9pydensity_8backends_6cython_8_core_cy_DeCompressor.tp_dict, __pyx_vtabptr_9pydensity_8backends_6cython_8_core_cy_DeCompressor) < 0) __PYX_ERR(0, 112, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_DeCompressor, (PyObject *)&__pyx_type_9pydensity_8backends_6cython_8_core_cy_DeCompressor) < 0) __PYX_ERR(0, 112, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_9pydensity_8backends_6cython_8_core_cy_DeCompressor) < 0) __PYX_ERR(0, 112, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_9pydensity_8backends_6cython_8_core_cy_DeCompressor.tp_dict, __pyx_vtabptr_9pydensity_8backends_6cython_8_core_cy_DeCompressor) < 0) __PYX_ERR(0, 116, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_DeCompressor, (PyObject *)&__pyx_type_9pydensity_8backends_6cython_8_core_cy_DeCompressor) < 0) __PYX_ERR(0, 116, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_9pydensity_8backends_6cython_8_core_cy_DeCompressor) < 0) __PYX_ERR(0, 116, __pyx_L1_error)
   __pyx_ptype_9pydensity_8backends_6cython_8_core_cy_DeCompressor = &__pyx_type_9pydensity_8backends_6cython_8_core_cy_DeCompressor;
   __pyx_vtabptr_array = &__pyx_vtable_array;
   __pyx_vtable_array.get_memview = (PyObject *(*)(struct __pyx_array_obj *))__pyx_array_get_memview;
@@ -20704,98 +20708,86 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "pydensity/backends/cython/_core_cy.pyx":3
- * # cython: language_level=3
- * # cython: cdivision=True
- * import enum             # <<<<<<<<<<<<<<
- * 
- * cimport cython
- */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_enum, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 3, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_enum, __pyx_t_1) < 0) __PYX_ERR(0, 3, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-
-  /* "pydensity/backends/cython/_core_cy.pyx":19
- *     DENSITY_STATE_ERROR_INVALID_CONTEXT,DENSITY_STATE_ERROR_INVALID_ALGORITHM,density_version_revision, density_decompress_with_context)
+  /* "pydensity/backends/cython/_core_cy.pyx":23
+ *     density_version_revision)
  * 
  * import enum             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_enum, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 19, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_enum, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 23, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_enum, __pyx_t_1) < 0) __PYX_ERR(0, 19, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_enum, __pyx_t_1) < 0) __PYX_ERR(0, 23, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":22
+  /* "pydensity/backends/cython/_core_cy.pyx":26
  * 
  * 
  * class Algorithm(enum.Enum):             # <<<<<<<<<<<<<<
  *     chameleon = DENSITY_ALGORITHM_CHAMELEON
  *     cheetah = DENSITY_ALGORITHM_CHEETAH
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_enum); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 22, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_enum); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_Enum); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 22, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_Enum); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 22, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_2);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_2);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_CalculateMetaclass(NULL, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 22, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CalculateMetaclass(NULL, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_Py3MetaclassPrepare(__pyx_t_2, __pyx_t_1, __pyx_n_s_Algorithm, __pyx_n_s_Algorithm, (PyObject *) NULL, __pyx_n_s_pydensity_backends_cython__core, (PyObject *) NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 22, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_Py3MetaclassPrepare(__pyx_t_2, __pyx_t_1, __pyx_n_s_Algorithm, __pyx_n_s_Algorithm, (PyObject *) NULL, __pyx_n_s_pydensity_backends_cython__core, (PyObject *) NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
 
-  /* "pydensity/backends/cython/_core_cy.pyx":23
+  /* "pydensity/backends/cython/_core_cy.pyx":27
  * 
  * class Algorithm(enum.Enum):
  *     chameleon = DENSITY_ALGORITHM_CHAMELEON             # <<<<<<<<<<<<<<
  *     cheetah = DENSITY_ALGORITHM_CHEETAH
  *     lion = DENSITY_ALGORITHM_LION
  */
-  __pyx_t_4 = __Pyx_PyInt_From_DENSITY_ALGORITHM(DENSITY_ALGORITHM_CHAMELEON); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 23, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_DENSITY_ALGORITHM(DENSITY_ALGORITHM_CHAMELEON); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 27, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_chameleon, __pyx_t_4) < 0) __PYX_ERR(0, 23, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_chameleon, __pyx_t_4) < 0) __PYX_ERR(0, 27, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":24
+  /* "pydensity/backends/cython/_core_cy.pyx":28
  * class Algorithm(enum.Enum):
  *     chameleon = DENSITY_ALGORITHM_CHAMELEON
  *     cheetah = DENSITY_ALGORITHM_CHEETAH             # <<<<<<<<<<<<<<
  *     lion = DENSITY_ALGORITHM_LION
  * 
  */
-  __pyx_t_4 = __Pyx_PyInt_From_DENSITY_ALGORITHM(DENSITY_ALGORITHM_CHEETAH); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 24, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_DENSITY_ALGORITHM(DENSITY_ALGORITHM_CHEETAH); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_cheetah, __pyx_t_4) < 0) __PYX_ERR(0, 24, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_cheetah, __pyx_t_4) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":25
+  /* "pydensity/backends/cython/_core_cy.pyx":29
  *     chameleon = DENSITY_ALGORITHM_CHAMELEON
  *     cheetah = DENSITY_ALGORITHM_CHEETAH
  *     lion = DENSITY_ALGORITHM_LION             # <<<<<<<<<<<<<<
  * 
  * cdef inline str format_state(DENSITY_STATE state):
  */
-  __pyx_t_4 = __Pyx_PyInt_From_DENSITY_ALGORITHM(DENSITY_ALGORITHM_LION); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 25, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_DENSITY_ALGORITHM(DENSITY_ALGORITHM_LION); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_lion, __pyx_t_4) < 0) __PYX_ERR(0, 25, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_lion, __pyx_t_4) < 0) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pydensity/backends/cython/_core_cy.pyx":22
+  /* "pydensity/backends/cython/_core_cy.pyx":26
  * 
  * 
  * class Algorithm(enum.Enum):             # <<<<<<<<<<<<<<
  *     chameleon = DENSITY_ALGORITHM_CHAMELEON
  *     cheetah = DENSITY_ALGORITHM_CHEETAH
  */
-  __pyx_t_4 = __Pyx_Py3ClassCreate(__pyx_t_2, __pyx_n_s_Algorithm, __pyx_t_1, __pyx_t_3, NULL, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 22, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_Py3ClassCreate(__pyx_t_2, __pyx_n_s_Algorithm, __pyx_t_1, __pyx_t_3, NULL, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_Algorithm, __pyx_t_4) < 0) __PYX_ERR(0, 22, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_Algorithm, __pyx_t_4) < 0) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -20804,7 +20796,7 @@ if (!__Pyx_RefNanny) {
   /* "pydensity/backends/cython/_core_cy.pyx":1
  * # cython: language_level=3             # <<<<<<<<<<<<<<
  * # cython: cdivision=True
- * import enum
+ * cimport cython
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
