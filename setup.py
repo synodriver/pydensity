@@ -101,7 +101,7 @@ def main():
         version=version,
         url="https://github.com/synodriver/pydensity",
         packages=packages,
-        keywords=["compress", "decompress"],
+        keywords=["compress", "decompress", "density"],
         description="compress and decompress",
         long_description_content_type="text/markdown",
         long_description=dis,
