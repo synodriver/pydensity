@@ -135,7 +135,7 @@ def compress(data: bytes, algorithm: Algorithm) -> bytes:
     )
     if result.state != lib.DENSITY_STATE_OK:
         raise ValueError(format_state(result.state))
-    return out[: result.bytesWritten]
+    return ffi.unpack(out, result.bytesWritten)
 
 
 def compress_into(data: bytes, out: bytearray, algorithm: Algorithm) -> int:

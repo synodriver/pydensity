@@ -33,5 +33,6 @@ jobs:
         python setup.py install --use-cython --use-cffi
     - name: Test with unitest
       run: |
-        cd tests
-        python test_all.py
+        cd test
+        python test_cy.py
+        python test_cffi.py
