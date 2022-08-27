@@ -51,7 +51,7 @@ cpdef inline uint8_t minor_version() nogil:
 cpdef inline uint8_t revision_version() nogil:
     return density_version_revision()
 
-cpdef inline size_t get_dictionary_size(object algorithm):
+cpdef inline size_t get_dictionary_size(object algorithm) except? 0:
     if not isinstance(algorithm, Algorithm):
         raise ValueError("algorithm should be an instance of Algorithm")
     cdef DENSITY_ALGORITHM v = algorithm.value
