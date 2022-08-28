@@ -30,7 +30,7 @@ class Algorithm(enum.Enum):
 
 cdef inline str format_state(DENSITY_STATE state):
     if state == DENSITY_STATE_ERROR_INPUT_BUFFER_TOO_SMALL:
-        return "input_buffer_too_small"
+        return "input buffer too small"
     elif state == DENSITY_STATE_ERROR_OUTPUT_BUFFER_TOO_SMALL:
         return "output buffer too small"
     elif state == DENSITY_STATE_ERROR_DURING_PROCESSING:
