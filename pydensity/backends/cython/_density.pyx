@@ -165,7 +165,7 @@ cpdef inline bytes compress(const uint8_t[::1] data, object algorithm):
     return out[:result.bytesWritten]
 
 
-cpdef inline uint_fast64_t compress_into(const uint8_t[::1] data, uint8_t[::1] out, object algorithm) except 0:
+cpdef inline uint_fast64_t compress_into(const uint8_t[::1] data, uint8_t[::1] out, object algorithm) except? 0:
     if not isinstance(algorithm, Algorithm):
         raise ValueError("algorithm should be an instance of Algorithm")
     cdef DENSITY_ALGORITHM v = algorithm.value
@@ -192,7 +192,7 @@ cpdef inline bytes decompress(const uint8_t[::1] data, uint_fast64_t decompress_
     return out[:result.bytesWritten]
 
 
-cpdef inline uint_fast64_t decompress_into(const uint8_t[::1] data, uint8_t[::1] out) except 0:
+cpdef inline uint_fast64_t decompress_into(const uint8_t[::1] data, uint8_t[::1] out) except? 0:
     cdef uint_fast64_t text_length = <uint_fast64_t> data.shape[0]
     cdef density_processing_result result
     with nogil:
