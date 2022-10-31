@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import enum
 
-from pydensity.backends.cffi._core_cffi import ffi, lib
+from pydensity.backends.cffi._density import ffi, lib
 
 
 class Algorithm(enum.Enum):

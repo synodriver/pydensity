@@ -24,3 +24,7 @@ class TestAll(TestCase):
 
     def tearDown(self) -> None:
         pass
+
+if __name__ == "__main__":
+    import unittest
+    unittest.main()

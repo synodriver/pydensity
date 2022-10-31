@@ -37,8 +37,8 @@ for root, dirs, files in os.walk("./dep/src"):
             c_sources.append(os.path.join(root, file))
 extensions = [
     Extension(
-        "pydensity.backends.cython._core_cy",
-        ["pydensity/backends/cython/_core_cy.pyx"] + c_sources,
+        "pydensity.backends.cython._density",
+        ["pydensity/backends/cython/_density.pyx"] + c_sources,
         include_dirs=["./dep/src"],
     ),
 ]

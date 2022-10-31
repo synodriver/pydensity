@@ -1,2 +1,2 @@
 # -*- coding: utf-8 -*-
-from pydensity.backends.cython._core_cy import *
+from pydensity.backends.cython._density import *

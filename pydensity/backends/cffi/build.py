@@ -184,7 +184,7 @@ for root, dirs, files in os.walk("./dep/src"):
 print(c_sources)
 
 ffibuilder.set_source(
-    "pydensity.backends.cffi._core_cffi",
+    "pydensity.backends.cffi._density",
     source,
     sources=c_sources,
     include_dirs=["./dep/src"],
