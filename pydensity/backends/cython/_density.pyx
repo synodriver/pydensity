@@ -64,11 +64,11 @@ cpdef inline uint_fast64_t compress_safe_size(const uint_fast64_t input_size) no
 cpdef inline uint_fast64_t decompress_safe_size(const uint_fast64_t input_size) nogil:
     return density_decompress_safe_size(input_size)
 
-cdef inline void* mem_alloc(size_t size) nogil:
+cdef inline void* mem_alloc(size_t size) noexcept nogil:
     with gil:
         return PyMem_Malloc(size)
 
-cdef inline void mem_free(void* p) nogil:
+cdef inline void mem_free(void* p) noexcept nogil:
     with gil:
         PyMem_Free(p)
 
